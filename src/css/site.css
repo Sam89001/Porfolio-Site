@@ -1,0 +1,11 @@
+.component-content-container {
+  width: 100%;
+  max-width: 1300px;
+  background-color: red;
+}
+
+.splash-page-component-container {
+  width: 100%;
+  background-color: green;
+  height: 100vh;
+}
