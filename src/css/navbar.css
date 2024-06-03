@@ -1,0 +1,21 @@
+.navbar-container {
+  position: fixed; 
+  top: 0;
+  height: 60px;
+  background-color: white;
+  box-shadow: 0 10px 10px rgba(173, 171, 171, 0.1);
+  z-index: 2;
+}
+
+.navbar-content {
+  max-width: 1300px;
+  background-color: transparent;
+  padding: 5px;
+}
+
+.navbar-button {
+  padding: 5px;
+  border: solid 2px var(--textGrey);
+  font-weight: 600;
+  background-color: transparent;
+}

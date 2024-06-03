@@ -1,18 +1,24 @@
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --textGrey: #323232;
+  --red: #E24242;
+  --green: #1BA55B;
+  --yellow: #E2D242;
+  --blue: #42BCE2;
 }
 
 body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 200;
+  color: var(--textGrey);
   margin: 0;
   background-color: white;
-  display: flex;
-  place-items: center;
   min-width: 320px;
-  min-height: 100vh;
+  min-height: 200vh;
+}
+
+.main-content {
+  padding-top: 70px;
 }
 
 
