@@ -11,7 +11,7 @@ function AboutPage() {
 
         <div className='row h-100' >
           {/* Left Side Text + Buttons */}
-          <div className='col-md-6 col-sm-12 '>
+          <div className='col-md-6 col-sm-12 about-page-text-column'>
 
             <div className='d-flex flex-column' style={{width: '80%'}}>
 
@@ -48,7 +48,7 @@ function AboutPage() {
           </div>
 
           {/* Right Side Image */}
-          <div className='col-md-6 col-sm-12 d-flex flex-column'>
+          <div className='col-md-6 col-sm-12 d-flex flex-column about-page-image-column'>
             <div className='d-flex about-page-profile-image-container justify-content-center '>
               <img className='img-fluid' alt={'Test'} src={ProfileImage}/>
             </div>

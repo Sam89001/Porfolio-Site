@@ -41,7 +41,7 @@ html {
   font-family: 'Josefin Sans', sans-serif;
   border: solid 2px var(--textGrey);
   font-weight: 600;
-  background-color: white;
+  background-color: transparent;
   transition: background-color 0.3s, color 0.3s, border-color 0.3s; 
 }
 

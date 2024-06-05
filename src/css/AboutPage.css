@@ -15,6 +15,21 @@
   padding-top: 5%;
 }
 
+.about-page-text-column {
+  order: 1;
+}
+.about-page-image-column {
+  order: 2;
+}
+
+@media (max-width: 768px) {
+  .about-page-text-column {
+    order: 2;
+  }
+  .about-page-image-column {
+    order: 1;
+  }
+}
 /* Headers and Text */
 
 .about-page-stats-larger,
@@ -44,5 +59,6 @@
 /* Buttons */
 
 .about-page-button {
+  width: 15em;
   padding: 0.8em;
 }
