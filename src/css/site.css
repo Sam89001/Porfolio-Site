@@ -1,3 +1,10 @@
+html {
+  font-size: 16px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 200;
+  color: var(--textGrey);
+}
+
 .component-content-container {
   width: 100%;
   max-width: 1300px;
@@ -5,6 +12,7 @@
 }
 
 .black-white-button-styling {
+  font-family: 'Josefin Sans', sans-serif;
   border: solid 2px var(--textGrey);
   font-weight: 600;
   background-color: white

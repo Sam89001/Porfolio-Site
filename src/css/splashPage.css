@@ -1,15 +1,48 @@
+
+/* site formatting */
 .splash-page-component-container {
   width: 100%;
-  background-color: green;
+  background-color: white;
   height: 85vh;
 }
 
 .splash-page-content {
   padding-top: 2%;
+  height: 85vh;
+}
+
+/* Headers */
+
+.splash-page-main-header,
+.splash-page-sub-header {
+  font-family: 'Josefin Sans', sans-serif;
+  letter-spacing: -5px;
 }
 
 .splash-page-main-header {
- font-size: 6rem;
+ font-size: 6.5rem;
+ font-weight: 400;
+}
+
+
+.splash-page-sub-header {
+  font-size: 1.5rem;
+  font-weight: 300; 
+  letter-spacing: -1px;
+  padding-bottom: 2em;
+}
+
+@media (max-width: 768px) {
+  .splash-page-main-header {
+    font-size: 4rem;
+  }
+}
+
+/* Images */
+
+.splash-page-social-media-image-container {
+  width: 10%;
+  padding-bottom: 2.5em;
 }
 
 .splash-page-social-media-image {
@@ -33,12 +66,12 @@
 
 }
 
-.splash-page-button {
-  padding: 1em;
+.splash-page-button-container {
+ width: 60%;
 }
 
-@media (max-width: 768px) {
-  .main-header {
-    font-size: 5rem;
-  }
+.splash-page-button {
+  padding: 0.8em;
 }
+
+

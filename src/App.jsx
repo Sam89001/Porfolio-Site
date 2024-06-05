@@ -11,7 +11,7 @@ function App() {
       <div>
         <Header/>
         <div className='main-content'>
-        <SplashPage/>
+          <SplashPage/>
         </div>
       </div>
   )

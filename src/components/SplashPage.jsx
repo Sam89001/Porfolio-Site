@@ -1,5 +1,6 @@
 import '../css/site.css'
 import '../css/splashPage.css'
+import '../css/index.css'
 
 import Logo from '../assets/Face Image 1.jpg'
 import GreenCircle from '../assets/Green Circle.png'
@@ -11,52 +12,53 @@ function SplashPage() {
     <div className='component-content-container splash-page-content' >
 
       <div className='row'>
+        
+        {/* Left Side Text + Buttons */}
+        <div className='col-md-6 col-sm-12 d-flex flex-column'>
 
-        <div className='col-md-6 col-sm-12'>
+          {/* Main Title*/}
+          <div className='d-flex justify-content-between align-items-end'>
+            
+            <h1 className='splash-page-main-header'>
+              <span>Web</span><br/>
+              <span>Developer</span>
+            </h1>
+            
 
-          <div className='d-flex justify-content-space-between'>
-            <div className='d-flex'>
-              <h1 className='splash-page-main-header'>
-                <span>Web</span><br/>
-                <span>Developer</span>
-              </h1>
-            </div>
-
-            <div className='d-flex' style={{width: '10%'}}>
-
-              <div className='d-flex splash-page-social-media-image'>
-                <img className='img-fluid ' src={GreenCircle} alt='Logo'/>
+            <div className='d-flex splash-page-social-media-image-container'>
+              <div className='splash-page-social-media-image'>
+                <img className='img-fluid' src={GreenCircle} alt='Logo'/>
               </div>
 
-              <div className='d-flex splash-page-social-media-image'>
-                <img className='img-fluid splash-page-social-media-image' src={GreenCircle} alt='Logo'/>
+              <div className='splash-page-social-media-image'>
+                <img className='img-fluid' src={GreenCircle} alt='Logo'/>
               </div>
-              
             </div>
-
-          </div>
-          
-          <div>
-            <h2>
-              Hi! My name is Samuel Cole, I'm a front-end developer based in the UK. Nice to meet you!
-            </h2>
           </div>
 
-          <div>
-            <button className='black-white-button-styling splash-page-button'>Let's Work Together</button>
+          {/* Sub Title + Buttons */}
+          <h2 className='splash-page-sub-header'>
+             Hi! My name is 
+             <span style={{fontWeight: '400'}}> Samuel Cole </span>
+             , I'm a front-end developer based in the UK. Nice to meet you!
+          </h2>
+
+          <div className='d-flex flex-row'>
+            <button className='black-white-button-styling splash-page-button' style={{marginRight: '20px'}}>Let's Work Together</button>
             <button className='black-white-button-styling splash-page-button'>View My Work</button>
           </div>
 
-          <div>
+          {/* Tech Stack */}
+          <div className='d-flex flex-column align-items-end' style={{marginTop: 'auto'}}>
             <div>
               <h3>Tech Stack</h3>
             </div>
-            <div>
-
-            </div>
+            {/* Your tech stack content goes here */}
           </div>
+
         </div>
 
+        {/* Right Side Image */}
         <div className='col-md-6 col-sm-12 d-flex justify-content-center' style={{position: 'relative'}}>
           <div className='d-flex justify-content-center' style={{height: '60%', width: '90%', }}>
 

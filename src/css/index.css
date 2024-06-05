@@ -7,23 +7,14 @@
   --blue: #42BCE2;
 }
 
-html {
-  font-size: 16px;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 200;
-  color: var(--textGrey);
-}
-
 body {
   margin: 0;
   background-color: white;
   min-width: 320px;
-  min-height: 200vh;
 }
 
 .main-content {
-  margin-top: 70px;
+  padding-top: 70px;
 }
-
 
 
