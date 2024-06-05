@@ -1,14 +1,18 @@
 
 /* site formatting */
+.splash-page-content,
+.splash-page-content {
+  height: 75vh;
+}
+
 .splash-page-component-container {
+  height: 100%;
   width: 100%;
   background-color: white;
-  height: 85vh;
 }
 
 .splash-page-content {
   padding-top: 2%;
-  height: 85vh;
 }
 
 /* Headers */
@@ -20,16 +24,26 @@
 }
 
 .splash-page-main-header {
- font-size: 6.5rem;
+ font-size: 7rem;
  font-weight: 400;
 }
 
 
+.splash-page-paragraph-header,
 .splash-page-sub-header {
   font-size: 1.5rem;
-  font-weight: 300; 
   letter-spacing: -1px;
+}
+
+.splash-page-paragraph-header {
+  font-weight: 300; 
   padding-bottom: 2em;
+}
+
+.splash-page-sub-header {
+  font-weight: 400; 
+  width: 100%;
+  border-bottom: 1px solid var(--textGrey);
 }
 
 @media (max-width: 768px) {
@@ -50,25 +64,21 @@
 }
 
 .splash-page-profile-image-container {
-  height: 50%;
-  position: absolute;
-  z-index: 2;
+  height: 80%
 }
 
-.splash-page-profile-image {
-  border-radius: 50%;
+.splash-page-tech-stack-images-container {
+  height: 3.5em
 }
 
-.splash-page-shapes-container {
- flex: 1;
- padding-top: 5%;
- padding-right: 10%;
-
+.splash-page-tech-stack-images {
+  padding-right: 1em;
 }
 
+/* Buttons */
 .splash-page-button-container {
- width: 60%;
-}
+  width: 60%;
+ }
 
 .splash-page-button {
   padding: 0.8em;
