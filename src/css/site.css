@@ -51,3 +51,12 @@ html {
   color: white;
   font-weight: 800;
 }
+
+/* Media Queries */
+
+@media (max-width: 990px) {
+  .main-header {
+    font-size: 6rem;
+    letter-spacing: -2px;
+  }
+}

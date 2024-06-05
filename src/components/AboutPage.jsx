@@ -11,9 +11,9 @@ function AboutPage() {
 
         <div className='row h-100' >
           {/* Left Side Text + Buttons */}
-          <div className='col-md-6 col-sm-12 about-page-text-column'>
+          <div className='col-lg-6 col-md-12 col-sm-12 about-page-text-column'>
 
-            <div className='d-flex flex-column' style={{width: '80%'}}>
+            <div className='d-flex flex-column about-page-text-section-width'>
 
               <h1 className='main-header'>Hey! I'm Sam</h1>
 
@@ -48,9 +48,9 @@ function AboutPage() {
           </div>
 
           {/* Right Side Image */}
-          <div className='col-md-6 col-sm-12 d-flex flex-column about-page-image-column'>
-            <div className='d-flex about-page-profile-image-container justify-content-center '>
-              <img className='img-fluid' alt={'Test'} src={ProfileImage}/>
+          <div className='col-lg-6 col-md-12 col-sm-12 about-page-image-column'>
+            <div className='about-page-profile-image-container'>
+              <img className='img-fluid' alt={'Profile'} src={ProfileImage}/>
             </div>
           </div>
         </div>

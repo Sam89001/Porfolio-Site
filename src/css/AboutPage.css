@@ -2,13 +2,14 @@
 
 .about-page-content,
 .about-page-component-container {
-  height: 95vh;
   background-color: var(--backgroundBlue);
 }
 
 .about-page-component-container {
   height: 100%;
   width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .about-page-content {
@@ -20,17 +21,14 @@
 }
 .about-page-image-column {
   order: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@media (max-width: 768px) {
-  .about-page-text-column {
-    order: 2;
-  }
-  .about-page-image-column {
-    order: 1;
-  }
+.about-page-text-section-width {
+  width: 80%;
 }
-
 
 /* Headers and Text */
 
@@ -55,12 +53,44 @@
 /* Images */
 
 .about-page-profile-image-container {
-  height: 80%
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.about-page-profile-image-container img {
+  max-width: 100%;
+  height: auto;
+}
 /* Buttons */
 
 .about-page-button {
   width: 15em;
   padding: 0.8em;
+}
+
+/* Media Queries */
+
+@media (max-width: 990px) {
+  .about-page-text-column {
+    order: 2;
+  }
+  .about-page-image-column {
+    order: 1;
+    width: 100%; 
+    padding: 3em 0em 3em 0em;
+  }
+
+  .about-page-profile-image-container {
+    height: auto; 
+  }
+
+  .about-page-profile-image-container img {
+    width: 80%; 
+  }
+
+  .about-page-text-section-width {
+    width: 100%;
+  }
 }
