@@ -13,12 +13,27 @@ html {
 
 /* Titles */
 
+
+.main-paragraph,
 .main-header {
   font-family: 'Josefin Sans', sans-serif;
-  font-family: 'Josefin Sans', sans-serif;
-  letter-spacing: -5px;
-  
 }
+
+.main-header {
+  font-size: 5rem;
+  letter-spacing: -2px;
+}
+
+.standard-bottom-padding {
+  padding-bottom: 2.5em;
+}
+
+.main-paragraph {
+  font-size: 1.5rem;
+  font-weight: 200; 
+  margin: 0;
+}
+
 
 /* Buttons */
 
@@ -32,7 +47,7 @@ html {
 
 .black-white-button-styling:hover {
   border-color: transparent;
-  background-color: red;
+  background-color: var(--red);
   color: white;
   font-weight: 800;
 }

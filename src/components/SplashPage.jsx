@@ -26,7 +26,7 @@ function SplashPage() {
             </h1>
             
 
-            <div className='d-flex splash-page-social-media-image-container'>
+            <div className='d-flex splash-page-social-media-image-container '>
               <div className='splash-page-social-media-image'>
                 <img className='img-fluid' src={GreenCircle} alt='Logo'/>
               </div>

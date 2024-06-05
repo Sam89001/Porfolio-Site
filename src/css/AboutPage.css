@@ -1,0 +1,48 @@
+/* site formatting */
+
+.about-page-content,
+.about-page-component-container {
+  height: 95vh;
+  background-color: var(--backgroundBlue);
+}
+
+.about-page-component-container {
+  height: 100%;
+  width: 100%;
+}
+
+.about-page-content {
+  padding-top: 5%;
+}
+
+/* Headers and Text */
+
+.about-page-stats-larger,
+.about-page-stats-smaller {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.about-page-stats-larger {
+  font-size: 3rem;
+  font-weight: 600; 
+  margin: 0px;
+}
+
+.about-page-stats-smaller {
+  font-size: 1.5rem;
+  font-weight: 400; 
+  letter-spacing: -1.5px;
+  line-height: -1;
+}
+
+/* Images */
+
+.about-page-profile-image-container {
+  height: 80%
+}
+
+/* Buttons */
+
+.about-page-button {
+  padding: 0.8em;
+}

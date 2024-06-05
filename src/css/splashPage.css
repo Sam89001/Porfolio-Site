@@ -1,7 +1,7 @@
 
 /* site formatting */
 .splash-page-content,
-.splash-page-content {
+.splash-page-component-container {
   height: 75vh;
 }
 
@@ -76,6 +76,7 @@
 }
 
 /* Buttons */
+
 .splash-page-button-container {
   width: 60%;
  }
