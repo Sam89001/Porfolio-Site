@@ -15,7 +15,7 @@ function SplashPage() {
       <div className='row h-100' >
         
         {/* Left Side Text + Buttons */}
-        <div className='col-md-6 col-sm-12 d-flex flex-column'>
+        <div className='col-lg-6 col-md-12 d-flex flex-column custom-col'>
 
           {/* Main Title*/}
           <div className='d-flex justify-content-between align-items-end'>
@@ -67,9 +67,9 @@ function SplashPage() {
         </div>
 
         {/* Right Side Image */}
-        <div className='col-md-6 col-sm-12 d-flex justify-content-center' >
-          <div className='d-flex splash-page-profile-image-container justify-content-center '>
-            <img className='img-fluid' alt={'Test'} src={ProfileImage}/>
+        <div className='col-6 d-flex justify-content-center splash-page-image-column' >
+          <div className='d-flex splash-page-profile-image-container justify-content-center splash-page-image-column'>
+            <img className='img-fluid splash-page-image-column' alt={'Test'} src={ProfileImage}/>
           </div>
         </div>
 
