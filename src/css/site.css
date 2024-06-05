@@ -4,8 +4,8 @@
   background-color: red;
 }
 
-.splash-page-component-container {
-  width: 100%;
-  background-color: green;
-  height: 100vh;
+.black-white-button-styling {
+  border: solid 2px var(--textGrey);
+  font-weight: 600;
+  background-color: white
 }

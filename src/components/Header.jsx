@@ -1,5 +1,4 @@
 import '../css/navbar.css'
-
 import Logo from '../assets/SC.png'
 
 function Header() {
@@ -33,7 +32,7 @@ function Header() {
         </div>
 
         <div className='d-flex w-50 justify-content-end align-items-center'>
-          <button className='navbar-button'>Download Resume</button>
+          <button className='navbar-button black-white-button-styling'>Download Resume</button>
         </div>
 
       </div>
