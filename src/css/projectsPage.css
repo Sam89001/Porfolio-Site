@@ -1,0 +1,67 @@
+/* Site Formatting */
+
+.projects-page-content,
+.projects-page-component-container {
+}
+
+.projects-page-component-container {
+  height: 100%;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.projects-page-content {
+  padding-top: 2%;
+}
+
+/* Headers */
+
+.projects-page-project-title {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 10rem;
+}
+
+.projects-page-project-description,
+.projects-page-small-project-title {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.projects-page-small-project-title,
+.projects-page-project-title {
+  font-size: 3rem;
+  font-weight: 400; 
+  letter-spacing: -2px;
+}
+
+.projects-page-project-description {
+  font-size: 1.5rem;
+  font-weight: 200; 
+  margin: 0;
+}
+
+
+
+/* Images  */
+
+.projects-page-social-media-image-container {
+  width: 10%;
+}
+
+.projects-page-social-media-image {
+  height: 10%;
+}
+
+/* Media Queries */
+
+@media (min-width: 990px) {
+  .projects-page-hideable-content {
+    display: none;
+  }
+}
+
+@media (max-width: 990px) {
+  .projects-page-small-project-title {
+    display: none;
+  }
+}
