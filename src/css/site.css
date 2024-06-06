@@ -25,13 +25,12 @@ html {
 }
 
 .standard-bottom-padding {
-  padding-bottom: 2.5em;
+  margin-bottom: 2.5em;
 }
 
 .main-paragraph {
   font-size: 1.5rem;
   font-weight: 200; 
-  margin: 0;
 }
 
 
@@ -56,7 +55,25 @@ html {
 
 @media (max-width: 990px) {
   .main-header {
+    font-size: 8rem;
+    letter-spacing: -2px;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-header {
     font-size: 6rem;
     letter-spacing: -2px;
+  }
+}
+
+@media (max-width: 500px) {
+  .main-header {
+    font-size: 5rem;
+
+  }
+
+  .main-paragraph {
+    font-size: 1.3rem;
   }
 }
