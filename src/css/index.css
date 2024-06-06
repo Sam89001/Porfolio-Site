@@ -12,7 +12,7 @@
 body {
   margin: 0;
   background-color: white;
-  min-width: 320px;
+  min-width: 100px;
 }
 
 .main-content {

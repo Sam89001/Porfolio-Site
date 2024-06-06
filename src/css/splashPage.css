@@ -13,8 +13,8 @@
   height: 100%;
   width: 100%;
   background-color: white;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .splash-page-content {
@@ -73,7 +73,10 @@
 }
 
 .splash-page-tech-stack-images-container {
-  height: 3.5em
+  height: 3.5em;
+  width: 100%;
+  overflow-y: auto;
+  padding-bottom: 10px;
 }
 
 .splash-page-tech-stack-images {
@@ -135,6 +138,10 @@
 @media (max-width: 600px) {
   .splash-page-main-header {
     font-size: 6rem;
+  }
+
+  .splash-page-tech-stack-images {
+    padding-right: 0.5em;
   }
 }
 
