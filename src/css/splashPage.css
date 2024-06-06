@@ -23,8 +23,8 @@
 
 .splash-page-image-column {
   display: flex;
+  justify-content: center;
 }
-
 
 /* Headers */
 
@@ -112,13 +112,13 @@
     font-size: 8rem;
   }
 
+  .splash-page-image-column {
+    display: none !important;
+  }
+
   .custom-col {
     flex: 0 0 100%;
     max-width: 100%;
-  }
-
-  .splash-page-image-column {
-    display: none;
   }
 }
 

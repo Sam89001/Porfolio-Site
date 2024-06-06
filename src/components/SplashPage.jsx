@@ -67,12 +67,11 @@ function SplashPage() {
         </div>
 
         {/* Right Side Image */}
-        <div className='col-6 d-flex justify-content-center splash-page-image-column' >
+        <div className='col-6 splash-page-image-column' >
           <div className='d-flex splash-page-profile-image-container justify-content-center splash-page-image-column'>
             <img className='img-fluid splash-page-image-column' alt={'Test'} src={ProfileImage}/>
           </div>
         </div>
-
 
       </div>
 
