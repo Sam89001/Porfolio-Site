@@ -46,12 +46,27 @@ function ProjectsPage() {
               </div>
             </div>    
 
-            <div className='col-lg-6 col-md-12 col-sm-12' style={{padding: '1em'}}> 
+            <div className='col-lg-6 col-md-12 col-sm-12 d-flex flex-column' style={{padding: '1em'}}> 
               <h2 className='projects-page-small-project-title'>Test</h2>
 
               <p className='main-paragraph about-page-paragraph standard-bottom-padding'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation 
               ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+              <div className='projects-page-sub-header' style={{marginTop: 'auto'}}>
+                <h3>Tech Stack</h3>
+              </div>
+
+              <div className='d-flex flex-row projects-page-tech-stack-images-container'>
+                <img className='img-fluid projects-page-tech-stack-images' src={GreenCircle} alt='Logo'/>
+                <img className='img-fluid projects-page-tech-stack-images' src={GreenCircle} alt='Logo'/>
+                <img className='img-fluid projects-page-tech-stack-images' src={GreenCircle} alt='Logo'/>
+                <img className='img-fluid projects-page-tech-stack-images' src={GreenCircle} alt='Logo'/>
+                <img className='img-fluid projects-page-tech-stack-images' src={GreenCircle} alt='Logo'/>
+                <img className='img-fluid projects-page-tech-stack-images' src={GreenCircle} alt='Logo'/>
+
+              </div>
+
             </div>   
 
           </div>   
