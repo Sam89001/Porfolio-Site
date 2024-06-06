@@ -2,12 +2,45 @@ import '../css/site.css'
 import '../css/splashPage.css'
 import '../css/index.css'
 
-import Logo from '../assets/Face Image 1.jpg'
 import ProfileImage from '../assets/Face Image With Shapes.png'
 import GreenCircle from '../assets/Green Circle.png'
-import BlueRectangle from '../assets/Blue Rectangle.png'
+
+import React, { useEffect } from 'react';
 
 function SplashPage() {
+
+  useEffect(() => {
+    const profileImage = document.querySelector('.splash-page-profile-image-container img');
+    const mainHeader = document.querySelector('.splash-page-main-header');
+    const subHeader = document.querySelector('.splash-page-paragraph-header');
+    const button1 = document.querySelector('.splash-page-work-together-button');
+    const button2 = document.querySelector('.splash-page-view-work-button');
+    const techStack = document.querySelector('.splash-page-tech-stack-images-container');
+    
+    
+    const addAnimationWithDelay = (element, animationClass, delay) => {
+      setTimeout(() => {
+        element.classList.add('fade-in', animationClass);
+      }, delay);
+    };
+    
+    const addInitialPosition = (element, initialClass) => {
+      element.classList.add(initialClass);
+    };
+    
+    addInitialPosition(mainHeader, 'initial-position');
+    addInitialPosition(subHeader, 'initial-position');
+    addInitialPosition(button1, 'initial-position');
+    addInitialPosition(button2, 'initial-position');
+    addAnimationWithDelay(mainHeader, 'slide-right', 0);
+    addAnimationWithDelay(subHeader, 'slide-right', 100); 
+    addAnimationWithDelay(button1, 'slide-right', 200); 
+    addAnimationWithDelay(button2, 'slide-right', 300); 
+    addAnimationWithDelay(profileImage, 'slide-left fade-in', 0); // Adjusted delay for profile image
+  }, []);
+
+  
+
  return(
   <div className='d-flex justify-content-center splash-page-component-container'>
     <div className='component-content-container splash-page-content' >
@@ -20,7 +53,7 @@ function SplashPage() {
           {/* Main Title*/}
           <div className='d-flex justify-content-between align-items-end'>
             
-            <h1 className='splash-page-main-header'>
+            <h1 className='splash-page-main-header' >
               <span>Web</span><br/>
               <span>Developer</span>
             </h1>
@@ -45,8 +78,8 @@ function SplashPage() {
           </h2>
 
           <div className='d-flex flex-row'>
-            <button className='black-white-button-styling splash-page-button' style={{marginRight: '20px'}}>Let's Work Together</button>
-            <button className='black-white-button-styling splash-page-button'>View My Work</button>
+            <button className='splash-page-work-together-button black-white-button-styling splash-page-button' style={{marginRight: '20px'}}>Let's Work Together</button>
+            <button className='splash-page-view-work-button black-white-button-styling splash-page-button'>View My Work</button>
           </div>
 
           {/* Tech Stack */}

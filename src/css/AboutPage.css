@@ -94,3 +94,18 @@
     width: 100%;
   }
 }
+
+@media (max-width: 767px) {
+  .about-page-stats-larger {
+    font-size: 2.5rem;
+    font-weight: 600; 
+    margin: 0px;
+  }
+  
+  .about-page-stats-smaller {
+    font-size: 1.3rem;
+    font-weight: 400; 
+    letter-spacing: -1.5px;
+    line-height: -1;
+  }
+}
