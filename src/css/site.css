@@ -28,6 +28,15 @@ html {
   margin-bottom: 2.5em;
 }
 
+.double-standard-bottom-padding {
+  margin-bottom: 5rem;
+}
+
+.triple-standard-bottom-padding {
+  margin-bottom: 7.5rem;
+}
+
+
 .main-paragraph {
   font-size: 1.5rem;
   font-weight: 200; 

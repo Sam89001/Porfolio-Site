@@ -71,6 +71,11 @@
   padding-right: 0.5em;
 }
 
+.projects-page-squiggle {
+  max-height: 7.5em;
+  height: 100%;
+}
+
 /* Media Queries */
 
 @media (min-width: 990px) {
