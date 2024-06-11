@@ -13,7 +13,22 @@
   padding: 5px;
 }
 
+
 .navbar-button {
   padding: 5px;
   
+}
+
+.navbar-hamburger-menu {
+  display: none;
+}
+
+@media (max-width: 994px) {
+  .navbar-hamburger-menu {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none
+  }
 }

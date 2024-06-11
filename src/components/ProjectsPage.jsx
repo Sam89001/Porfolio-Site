@@ -4,8 +4,8 @@ import '../css/projectsPage.css'
 
 import GreenCircle from '../assets/Green Circle.png'
 import DndCreatorImage from '../assets/Dnd Creator.png'
-import RedSquiggle from '../assets/Red Squiggle.webp'
-import GreenSquiggle from '../assets/Green Squiggle.webp'
+import RedSquiggle from '../assets/Red Squiggle.png'
+import GreenSquiggle from '../assets/Green Squiggle.png'
 
 import Project from '../components/Project.jsx'
 

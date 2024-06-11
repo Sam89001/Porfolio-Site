@@ -2,7 +2,7 @@ import '../css/site.css'
 import '../css/splashPage.css'
 import '../css/index.css'
 
-import ProfileImage from '../assets/Face Image With Shapes.png'
+import ProfileImage from '../assets/Face Image With Shapes.webp'
 import GreenCircle from '../assets/Green Circle.png'
 
 import React, { useEffect } from 'react';
