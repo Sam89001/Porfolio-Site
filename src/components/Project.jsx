@@ -5,9 +5,9 @@ import '../css/projectsPage.css'
 import GreenCircle from '../assets/Green Circle.png'
 
 
-function Project({ ProjectTitle, ProjectImage, Logo, BackgroundColour }) {
+function Project({ ProjectTitle, ProjectImage, Logo, BackgroundColour, ProjectDescription }) {
   return (
-    <div className='d-flex justify-content-center projects-page-component-container standard-bottom-padding' style={{backgroundColor: BackgroundColour, paddingBottom: '2em'}}>
+    <div className='d-flex justify-content-center projects-page-component-container' style={{backgroundColor: BackgroundColour, paddingBottom: '2em'}}>
       <div className='component-content-container projects-page-content ' style={{backgroundColor: BackgroundColour}}>
             <div className='row h-100'>
 
@@ -39,9 +39,7 @@ function Project({ ProjectTitle, ProjectImage, Logo, BackgroundColour }) {
               <div className='col-lg-6 col-md-12 col-sm-12 d-flex flex-column'> 
                 <h2 className='projects-page-small-project-title'>{ProjectTitle}</h2>
 
-                <p className='project-page-project-paragraph standard-bottom-padding'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation 
-                ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <p className='project-page-project-paragraph standard-bottom-padding'>{ProjectDescription}</p>
 
                 <div className='projects-page-sub-header' style={{marginTop: 'auto'}}>
                   <h3>Tech Stack</h3>
