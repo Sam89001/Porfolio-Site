@@ -4,6 +4,8 @@ import '../css/index.css'
 
 import ProfileImage from '../assets/Face Image With Shapes.webp'
 import GreenCircle from '../assets/Green Circle.png'
+import GithubLogo from '../assets/github-logo.svg'
+import LinkedInLogo from '../assets/linkedin-logo.svg'
 
 import React, { useEffect } from 'react';
 
@@ -60,13 +62,19 @@ function SplashPage() {
             
 
             <div className='d-flex splash-page-social-media-image-container '>
+
               <div className='splash-page-social-media-image'>
-                <img className='img-fluid' src={GreenCircle} alt='Logo'/>
+                <a href="https://github.com/Sam89001" target="_blank" rel="noopener noreferrer">
+                  <img className='img-fluid' src={GithubLogo} alt='GitHub Logo' />
+                </a>
               </div>
 
               <div className='splash-page-social-media-image'>
-                <img className='img-fluid' src={GreenCircle} alt='Logo'/>
+                <a href="https://www.linkedin.com/in/samuel-cole-586582229/" target="_blank" rel="noopener noreferrer">
+                  <img className='img-fluid' src={LinkedInLogo} alt='Logo'/>
+                </a>
               </div>
+
             </div>
           </div>
 

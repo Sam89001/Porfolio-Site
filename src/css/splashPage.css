@@ -62,10 +62,17 @@
 .splash-page-social-media-image-container {
   width: 10%;
   padding-bottom: 2.5em;
+  
 }
 
 .splash-page-social-media-image {
   height: 10%;
+  padding-right: 0.2rem;
+  transition: opacity 0.1s ease-in;
+}
+
+.splash-page-social-media-image:hover {
+  opacity: 0.3;
 }
 
 .splash-page-profile-image-container {
