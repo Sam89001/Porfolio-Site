@@ -62,7 +62,7 @@ function SplashPage() {
             </h1>
             
 
-            <div className='d-flex splash-page-social-media-image-container '>
+            <div className='d-flex splash-page-social-media-image-container'>
 
               <div className='splash-page-social-media-image'>
                 <a href="https://github.com/Sam89001" target="_blank" rel="noopener noreferrer">

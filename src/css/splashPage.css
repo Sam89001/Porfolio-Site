@@ -119,11 +119,13 @@
 
 @media (max-width: 992px) {
   .splash-page-main-header {
-    font-size: 8rem;
+    font-size: 10rem;
   }
 
-  .splash-page-image-column {
-    display: none !important;
+  .splash-page-image-column,
+  .splash-page-social-media-image-container,
+  .splash-page-social-media-image {
+    display: none;
   }
 
   .custom-col {
@@ -136,7 +138,7 @@
 @media (max-width: 767px) {
 
   .splash-page-main-header {
-    font-size: 7rem;
+    font-size: 9rem;
   }
 
   .splash-page-content,
@@ -147,7 +149,7 @@
 
 @media (max-width: 600px) {
   .splash-page-main-header {
-    font-size: 6rem;
+    font-size: 8rem;
   }
 
   .splash-page-tech-stack-images {
@@ -157,13 +159,13 @@
 
 @media (max-width: 500px) {
   .splash-page-main-header {
-    font-size: 4.5rem;
+    font-size: 5.5rem;
   }
 }
 
 @media (max-width: 400px) {
   .splash-page-main-header {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 }
 

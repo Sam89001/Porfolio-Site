@@ -9,8 +9,7 @@ function Header() {
       <div className='d-flex justify-content-center align-items-center w-100 h-100 navbar-content'>
 
         <div className='d-flex w-50 h-100 justify-content-start align-items-center'>
-          <img className='img-fluid' src={Logo} alt='Logo' style={{height: '80%', paddingRight: '1em'}}/>
-
+          <img className='img-fluid navbar-logo' src={Logo} alt='Logo' style={{height: '80%'}}/>
           <img className='img-fluid navbar-hamburger-menu' src={HamburgerMenu} alt='Menu' style={{height: '80%'}}/>
 
           <nav className='w-100 navbar-links' >

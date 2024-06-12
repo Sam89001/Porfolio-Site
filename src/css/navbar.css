@@ -22,6 +22,14 @@
   display: none;
 }
 
+/* Images */
+
+.navbar-logo,
+.navbar-hamburger-menu {
+  height: 80%;
+  padding-right: 1em;
+}
+
 /* Text */
 
 .navbar-item {
@@ -46,7 +54,8 @@
     display: flex;
   }
 
-  .navbar-links {
+  .navbar-links,
+  .navbar-logo {
     display: none
   }
 }
