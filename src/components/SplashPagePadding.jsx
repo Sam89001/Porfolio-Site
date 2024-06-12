@@ -1,4 +1,4 @@
-import BlueSquiggle from '../assets/Red Squiggle 2.webp'
+import BlueSquiggle from '../assets/Red Squiggle 2 Shorter.webp'
 
 function SplashPagePadding() {
   return(
