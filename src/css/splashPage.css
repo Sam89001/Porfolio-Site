@@ -98,6 +98,9 @@
 
 .splash-page-button {
   padding: 0.8em;
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--textGrey);
 }
 
 

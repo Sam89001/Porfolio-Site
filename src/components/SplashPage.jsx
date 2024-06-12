@@ -87,8 +87,11 @@ function SplashPage() {
           </h2>
 
           <div className='d-flex flex-row'>
-            <button className='splash-page-work-together-button black-white-button-styling splash-page-button' style={{marginRight: '20px'}}>Let's Work Together</button>
-            <button className='splash-page-view-work-button black-white-button-styling splash-page-button'>View My Work</button>
+            <a className='splash-page-work-together-button black-white-button-styling splash-page-button' 
+            style={{marginRight: '20px'}} href="#section4">Let's Work Together</a>
+
+            <a className='splash-page-view-work-button black-white-button-styling splash-page-button'
+            href="#section4">View My Work</a>
           </div>
 
           {/* Tech Stack */}
