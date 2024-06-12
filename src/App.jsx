@@ -7,6 +7,7 @@ import Padding from './components/Padding.jsx'
 import SplashPagePadding from './components/SplashPagePadding.jsx'
 import ProjectsPage from './components/ProjectsPage.jsx'
 import ContactPage from './components/ContactPage.jsx'
+import Footer from './components/Footer.jsx'
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <ProjectsPage/>
           <ContactPage/>
         </div>
+        <Footer/>
         
       </div>
   )

@@ -1,0 +1,10 @@
+.footer-container {
+  height: 6rem;
+  background-color: white;
+}
+
+.footer-content {
+  max-width: 1300px;
+  background-color: transparent;
+  padding: 5px;
+}
