@@ -91,7 +91,7 @@ function SplashPage() {
             style={{marginRight: '20px'}} href="#section4">Let's Work Together</a>
 
             <a className='splash-page-view-work-button black-white-button-styling splash-page-button'
-            href="#section4">View My Work</a>
+            href="#section3">View My Work</a>
           </div>
 
           {/* Tech Stack */}
