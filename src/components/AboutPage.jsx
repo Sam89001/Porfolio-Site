@@ -15,7 +15,7 @@ function AboutPage() {
 
             <div className='d-flex flex-column about-page-text-section-width'>
 
-              <h1 className='main-header'>Hey! I'm Sam</h1>
+              <h1 className='main-header standard-bottom-padding'>Hey! I'm Sam</h1>
 
               <p className='main-paragraph about-page-paragraph standard-bottom-padding'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
@@ -43,8 +43,6 @@ function AboutPage() {
               <button className='black-white-button-styling about-page-button' >Download My Resume</button>
             </div>
 
-          
-          
           </div>
 
           {/* Right Side Image */}

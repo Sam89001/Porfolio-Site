@@ -19,7 +19,7 @@ function ProjectsPage() {
         <div className='component-content-container projects-page-content flex-column'>
 
           <h1 className='main-header'>Portfolio</h1>
-          <p className='main-paragraph about-page-paragraph triple-standard-bottom-padding'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+          <p className='main-paragraph about-page-paragraph double-standard-bottom-padding'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation 
           ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
         </div>
@@ -29,6 +29,8 @@ function ProjectsPage() {
       ProjectDescription=
       {'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'}/>
       
+      {/* Image & Padding*/}
+
       <div className='d-flex justify-content-end'>
         <img className='img-fluid projects-page-squiggle' src={RedSquiggle} ></img>
       </div>
@@ -37,6 +39,7 @@ function ProjectsPage() {
       ProjectDescription=
       {'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'}/>
 
+      {/* Image & Padding*/}
 
       <div className='d-flex justify-content-start'>
         <img className='img-fluid projects-page-squiggle' src={GreenSquiggle}></img>
@@ -45,6 +48,8 @@ function ProjectsPage() {
       <Project ProjectImage={DndCreatorImage} Logo={GreenCircle} ProjectTitle={'Portfolio'} BackgroundColour={'var(--backgroundGrey)'}
       ProjectDescription=
       {'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'}/>
+
+      {/* Image & Padding*/}
 
       <div className='d-flex justify-content-between' style={{width: '100%'}}>
         <img className='img-fluid projects-page-squiggle' src={BlueSquiggle} style={{transform: 'rotate(180deg)', marginLeft: '10em'}}/>
