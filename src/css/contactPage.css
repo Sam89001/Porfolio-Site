@@ -1,0 +1,16 @@
+.contact-page-content,
+.contact-page-component-container {
+  background-color: var(--backgroundBlue);
+}
+
+.contact-page-component-container {
+  height: 100%;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.contact-page-content {
+  padding-top: 2%;
+  padding-bottom: 4%;
+}
