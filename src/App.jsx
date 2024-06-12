@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './css/index.css'
+import TopPadding from './components/TopPadding.jsx'
 import Header from './components/Header.jsx'
 import SplashPage from './components/SplashPage.jsx'
 import AboutPage from './components/AboutPage.jsx'
@@ -14,19 +15,18 @@ function App() {
 
 
   return (
-      <div>
-        <Header/>
-        <div className='main-content'>
-          <SplashPage/>
-          <SplashPagePadding/>
-          <AboutPage/>
-          <Padding/>
-          <ProjectsPage/>
-          <ContactPage/>
-        </div>
-        <Footer/>
+    <div>
+      <TopPadding/>
+      <Header/>
+      <SplashPage/>
+      <SplashPagePadding/>
+      <AboutPage/>
+      <Padding/>
+      <ProjectsPage/>
+      <ContactPage/>
+      <Footer/>
         
-      </div>
+    </div>
   )
 }
 
