@@ -15,7 +15,7 @@ import Project from '../components/Project.jsx'
 
 function ProjectsPage() {
   return (
-    <div>
+    <section>
       <div className='d-flex justify-content-center projects-page-component-container'>
         <div className='component-content-container projects-page-content flex-column'>
 
@@ -64,7 +64,7 @@ function ProjectsPage() {
       </div>
 
 
-    </div>
+    </section>
   )
 }
 

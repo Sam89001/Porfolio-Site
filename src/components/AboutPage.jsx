@@ -6,7 +6,7 @@ import ProfileImage from '../assets/Face Image With Shapes 2.png'
 
 function AboutPage() {
   return (
-    <div className='d-flex justify-content-center about-page-component-container'>
+    <section className='d-flex justify-content-center about-page-component-container'>
       <div className='component-content-container about-page-content'>
 
         <div className='row h-100' >
@@ -54,7 +54,7 @@ function AboutPage() {
         </div>
 
       </div>
-    </div>
+    </section>
   )
 }
 

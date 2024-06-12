@@ -3,6 +3,7 @@ html {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 200;
   color: var(--textGrey);
+  scroll-behavior: smooth;
 }
 
 .component-content-container {

@@ -4,7 +4,7 @@ import '../css/contactPage.css'
 
 function ContactPage() {
   return (
-    <div className='d-flex justify-content-center contact-page-component-container'>
+    <section className='d-flex justify-content-center contact-page-component-container' id="section4">
       <div className='component-content-container contact-page-content'>
         <div className='row h-100'>
 
@@ -29,7 +29,7 @@ function ContactPage() {
 
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

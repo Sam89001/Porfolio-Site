@@ -45,7 +45,7 @@ function SplashPage() {
   
 
  return(
-  <div className='d-flex justify-content-center splash-page-component-container'>
+  <section className='d-flex justify-content-center splash-page-component-container' id="section1">
     <div className='component-content-container splash-page-content' >
 
       <div className='row h-100' >
@@ -119,7 +119,7 @@ function SplashPage() {
 
 
     </div>
-  </div>
+  </section>
  )
 }
 

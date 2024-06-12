@@ -19,16 +19,13 @@ function Header() {
                 <a className="navbar-link" href="#section1">Home</a>
               </li>
               <li className="navbar-item">
-                <a className="navbar-link" href="#section2">Skills</a>
+                <a className="navbar-link" href="#section2">About</a>
               </li>
               <li className="navbar-item">
                 <a className="navbar-link" href="#section3">Projects</a>
               </li>
               <li className="navbar-item">
-                <a className="navbar-link" href="#section4">About</a>
-              </li>
-              <li className="navbar-item">
-                <a className="navbar-link" href="#section5">Contact Me</a>
+                <a className="navbar-link" href="#section4">Contact Me</a>
               </li>
             </ul>
           </nav>
