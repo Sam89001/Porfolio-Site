@@ -4,9 +4,15 @@ import '../css/index.css'
 import '../css/padding.css'
 
 import ProfileImage from '../assets/Face Image With Shapes.webp'
-import GreenCircle from '../assets/Green Circle.png'
 import GithubLogo from '../assets/github-logo.svg'
 import LinkedInLogo from '../assets/linkedin-logo.svg'
+import HtmlLogo from '../assets/html-5-logo.svg'
+import CssLogo from '../assets/css-logo.svg'
+import BootstrapLogo from '../assets/bootstrap-logo.svg'
+import JavascriptLogo from '../assets/javascript-logo.svg'
+import ReactLogo from '../assets/react-logo.svg'
+import NodeLogo from '../assets/nodejs-logo.svg'
+import MongoLogo from '../assets/mongodb-logo.svg'
 
 import React, { useEffect } from 'react';
 
@@ -99,13 +105,13 @@ function SplashPage() {
             <h3 className='splash-page-sub-header'>Tech Stack</h3>
 
             <div className='d-flex flex-row splash-page-tech-stack-images-container'>
-              <img className='img-fluid splash-page-tech-stack-images' src={GreenCircle} alt='Logo'/>
-              <img className='img-fluid splash-page-tech-stack-images' src={GreenCircle} alt='Logo'/>
-              <img className='img-fluid splash-page-tech-stack-images' src={GreenCircle} alt='Logo'/>
-              <img className='img-fluid splash-page-tech-stack-images' src={GreenCircle} alt='Logo'/>
-              <img className='img-fluid splash-page-tech-stack-images' src={GreenCircle} alt='Logo'/>
-              <img className='img-fluid splash-page-tech-stack-images' src={GreenCircle} alt='Logo'/>
-
+              <img className='img-fluid splash-page-tech-stack-images' src={HtmlLogo} alt='Logo'/>
+              <img className='img-fluid splash-page-tech-stack-images' src={CssLogo} alt='Logo'/>
+              <img className='img-fluid splash-page-tech-stack-images' src={BootstrapLogo} alt='Logo'/>
+              <img className='img-fluid splash-page-tech-stack-images' src={JavascriptLogo} alt='Logo'/>
+              <img className='img-fluid splash-page-tech-stack-images' src={ReactLogo} alt='Logo'/>
+              <img className='img-fluid splash-page-tech-stack-images' src={NodeLogo} alt='Logo'/>
+              <img className='img-fluid splash-page-tech-stack-images' src={MongoLogo} alt='Logo'/>
             </div>
           </div>
 
