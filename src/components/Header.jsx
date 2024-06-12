@@ -15,20 +15,20 @@ function Header() {
 
           <nav className='w-100 navbar-links' >
             <ul className="nav">
-              <li className="nav-item">
-                <a className="nav-link" href="#section1">Home</a>
+              <li className="navbar-item">
+                <a className="navbar-link" href="#section1">Home</a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#section2">Skills</a>
+              <li className="navbar-item">
+                <a className="navbar-link" href="#section2">Skills</a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#section3">Projects</a>
+              <li className="navbar-item">
+                <a className="navbar-link" href="#section3">Projects</a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#section4">About</a>
+              <li className="navbar-item">
+                <a className="navbar-link" href="#section4">About</a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#section5">Contact Me</a>
+              <li className="navbar-item">
+                <a className="navbar-link" href="#section5">Contact Me</a>
               </li>
             </ul>
           </nav>

@@ -13,7 +13,6 @@
   padding: 5px;
 }
 
-
 .navbar-button {
   padding: 5px;
   
@@ -21,6 +20,26 @@
 
 .navbar-hamburger-menu {
   display: none;
+}
+
+/* Text */
+
+.navbar-item {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  list-style: none;
+  padding-right: 1.5rem;
+}
+
+.navbar-link {
+  color: var(--textGrey); 
+  text-decoration: none; 
+  transition: border-bottom 0.5s ease-in; 
+}
+
+.navbar-link:hover {
+  border-bottom: solid var(--textGrey) 0.1rem;
 }
 
 @media (max-width: 994px) {

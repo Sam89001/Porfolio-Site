@@ -1,6 +1,7 @@
 import '../css/site.css'
 import '../css/index.css'
 import '../css/projectsPage.css'
+import '../css/padding.css'
 
 import GreenCircle from '../assets/Green Circle.png'
 import DndCreatorImage from '../assets/Dnd Creator.png'
@@ -53,11 +54,11 @@ function ProjectsPage() {
 
       <div className='d-flex justify-content-between' style={{width: '100%'}}>
         <img className='img-fluid projects-page-squiggle' src={BlueSquiggle} style={{transform: 'rotate(180deg)', marginLeft: '10em'}}/>
-        <img className='img-fluid projects-page-squiggle' src={YellowSquiggle} />
+        <img className='img-fluid projects-page-squiggle hide-squiggles' src={YellowSquiggle} />
       </div>
 
       <div className='d-flex flex-column' style={{ position: 'relative', height: '7.5rem' }}>
-        <img className='img-fluid' src={GreenSquigglePadding} style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', height: '100%', zIndex: 2 }} />
+        <img className='img-fluid hide-squiggles' src={GreenSquigglePadding} style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', height: '100%', zIndex: 2 }} />
         <div style={{ height: '71%' }}></div>
         <div style={{ height: '29%', backgroundColor: 'var(--backgroundBlue)' }}></div>
       </div>

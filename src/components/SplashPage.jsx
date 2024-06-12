@@ -1,6 +1,7 @@
 import '../css/site.css'
 import '../css/splashPage.css'
 import '../css/index.css'
+import '../css/padding.css'
 
 import ProfileImage from '../assets/Face Image With Shapes.webp'
 import GreenCircle from '../assets/Green Circle.png'

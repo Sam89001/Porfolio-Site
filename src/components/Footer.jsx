@@ -8,14 +8,16 @@ function Footer() {
     <div className='d-flex justify-content-center align-items-center w-100 footer-container'>
       <div className='d-flex justify-content-between align-items-center w-100 h-100 footer-content'>
 
-        <div className='d-flex align-items-center' style={{height: '40%', paddingRight: '1rem'}}>
-          <img className='img-fluid' src={Logo} alt='Logo' style={{height: '100%', paddingRight: '1rem'}}/>
-          <p style={{margin: '0'}}>© 2024 Samuel Cole, All Rights Reserved</p>
-        </div>
+        <p style={{margin: '0'}}>© 2024 Samuel Cole, All Rights Reserved</p>
 
         <div className='d-flex' style={{height: '40%', paddingRight: '1rem'}}>
-          <img className='img-fluid' src={GithubLogo} alt='Logo' style={{height: '100%', paddingRight: '0.5rem'}}/>
-          <img className='img-fluid' src={LinkedInLogo} alt='Logo' style={{height: '100%'}}/>
+          <a href="https://github.com/Sam89001" target="_blank" rel="noopener noreferrer">
+            <img className='img-fluid' src={GithubLogo} alt='Logo' style={{height: '100%', paddingRight: '0.5rem'}}/>
+          </a>
+          
+          <a href="https://www.linkedin.com/in/samuel-cole-586582229/" target="_blank" rel="noopener noreferrer">
+            <img className='img-fluid' src={LinkedInLogo} alt='Logo' style={{height: '100%'}}/>
+          </a>
         </div>
 
       </div>
