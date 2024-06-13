@@ -5,29 +5,41 @@ import '../css/contactPage.css'
 import Email from '../assets/email-logo.svg'
 import Phone from '../assets/phone-logo.svg'
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import toast, { Toaster } from 'react-hot-toast';
 
 function ContactPage() {
 
-  {/* Email.js to send without a backend */}
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
+  
+  
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(
-      process.env.REACT_APP_EMAILJS_SERVICE_ID,
-      process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-      e.target,
-      process.env.REACT_APP_EMAILJS_PUBLIC_KEY
-    )
-      .then((result) => {
-        console.log(result.text);
-        toast.success('Email sent successfully!');
-      }, (error) => {
-        console.log(error.text);
-        toast.error('Failed to send email. Please try again.');
-      });
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+    const template = {
+      from_name: name,
+      from_email: email,
+      to_name: 'SamCS',
+      message: message
+    }
+
+    emailjs.send(serviceId, templateId, template, publicKey)
+      .then((response) => {
+        console.log('success', response);
+        setName('');
+        setEmail('');
+        setMessage('');
+      })
+      .catch((error) => {
+        console.error('error', response)
+      })
   };
 
   return (
@@ -81,27 +93,37 @@ function ContactPage() {
           {/* Form */}
 
           <div className='col-lg-6 col-md-12 col-sm-12 flex-column'>
+
             <form onSubmit={sendEmail}>
 
               <div className='contact-page-input-container'>
                 <label className='contact-page-label'>Name <span className='contact-page-label-star'>*</span>
                 </label>
-                <input className='d-flex contact-page-input-field' placeholder='John Smith' type='text' name='user_name'/>
+                <input className='d-flex contact-page-input-field' 
+                placeholder='John Smith' 
+                type="text" 
+                onChange={(e) => { setName(e.target.value)}}
+                />
               </div>
               
               <div className='contact-page-input-container'>
                 <label className='contact-page-label'>Email <span className='contact-page-label-star'>*</span>
                 </label>
-                <input className='d-flex contact-page-input-field' placeholder='JohnSmith@SmithJohn.com' type='email' name='user_email'/>
+                <input className='d-flex contact-page-input-field' 
+                placeholder='JohnSmith@SmithJohn.com' 
+                type="email"
+                onChange={(e) => { setEmail(e.target.value)}} />
               </div>
 
               <div className='contact-page-input-container'>
                 <label className='contact-page-label'>Message <span className='contact-page-label-star'>*</span>
                 </label>
-                <textarea className='d-flex contact-page-input-message-field' placeholder='Your Message' name='message' />
+                <textarea className='d-flex contact-page-input-message-field' 
+                placeholder='Your Message' 
+                onChange={(e) => { setMessage(e.target.value)}} />
               </div>
 
-              <input type='submit' value='send'></input>
+              <input type='submit' value="Send"></input>
 
             </form>
 
