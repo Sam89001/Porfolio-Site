@@ -14,3 +14,37 @@
   padding-top: 2%;
   padding-bottom: 4%;
 }
+
+.contact-page-input-container {
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+.contact-page-input-field,
+.contact-page-input-message-field  {
+  background-color: transparent;
+  padding: 10px;
+  border: solid 1px var(--textGrey);
+  width: 100%;
+  font-family: 'Josefin Sans', sans-serif;
+  color: var(--textGrey);
+}
+
+.contact-page-label-star {
+  color: red;
+  font-size: 1.5rem;
+}
+
+.contact-page-label {
+  padding-left: 1rem;
+  font-family: 'Josefin Sans', sans-serif;
+  color: var(--textGrey);
+}
+
+.contact-page-input-field {
+  border-radius: 2rem
+}
+
+.contact-page-input-message-field {
+  min-height: 15rem;
+}
