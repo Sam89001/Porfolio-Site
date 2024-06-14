@@ -4,12 +4,21 @@ import '../css/projectsPage.css'
 import '../css/padding.css'
 
 import GreenCircle from '../assets/Green Circle.png'
-import DndCreatorImage from '../assets/Dnd Creator.png'
 import RedSquiggle from '../assets/Red Squiggle.png'
 import GreenSquiggle from '../assets/Green Squiggle.png'
 import GreenSquigglePadding from '../assets/Green Squiggle Padding.webp'
 import BlueSquiggle from '../assets/Blue Squiggle.webp'
 import YellowSquiggle from '../assets/Yellow Squiggle.webp'
+
+import DndCreatorImage from '../assets/Dnd Creator.png'
+import DndCreatorImage2 from '../assets/Dnd Creator 2.png'
+import DndCreatorImage3 from '../assets/Dnd Creator 3.png'
+import PortfolioImage from '../assets/Portfolio 1.png'
+import PortfolioImage2 from '../assets/Portfolio 2.png'
+import PortfolioImage3 from '../assets/Portfolio 3.png'
+
+const DndCreatorImages = [DndCreatorImage, DndCreatorImage2, DndCreatorImage3]
+const PortfolioImages = [PortfolioImage, PortfolioImage2, PortfolioImage3]
 
 import Project from '../components/Project.jsx'
 
@@ -26,7 +35,7 @@ function ProjectsPage() {
         </div>
       </div>
 
-      <Project ProjectImage={DndCreatorImage} Logo={GreenCircle} ProjectTitle={'Dnd Creator'} BackgroundColour={'var(--backgroundBlue)'}
+      <Project ProjectImage={DndCreatorImages} Logo={GreenCircle} ProjectTitle={'Dnd Creator'} BackgroundColour={'var(--backgroundBlue)'}
       ProjectDescription=
       {'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'}/>
       
@@ -36,7 +45,7 @@ function ProjectsPage() {
         <img className='img-fluid projects-page-squiggle' src={RedSquiggle} ></img>
       </div>
 
-      <Project ProjectImage={DndCreatorImage} Logo={GreenCircle} ProjectTitle={'Portfolio'} BackgroundColour={'var(--backgroundGrey)'}
+      <Project ProjectImage={PortfolioImages} Logo={GreenCircle} ProjectTitle={'Portfolio'} BackgroundColour={'var(--backgroundGrey)'}
       ProjectDescription=
       {'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'}/>
 
@@ -46,7 +55,7 @@ function ProjectsPage() {
         <img className='img-fluid projects-page-squiggle' src={GreenSquiggle}></img>
       </div>
 
-      <Project ProjectImage={DndCreatorImage} Logo={GreenCircle} ProjectTitle={'Portfolio'} BackgroundColour={'var(--backgroundGrey)'}
+      <Project ProjectImage={DndCreatorImages} Logo={GreenCircle} ProjectTitle={'Portfolio'} BackgroundColour={'var(--backgroundGrey)'}
       ProjectDescription=
       {'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'}/>
 

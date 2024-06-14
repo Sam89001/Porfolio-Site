@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1500" width="1500" height="1500">
+	<title>Arrow Icon</title>
+	<style>
+		.s0 { fill: #000000;stroke: #323232;stroke-miterlimit:100;stroke-width: 30 } 
+	</style>
+	<path id="Layer 1" class="s0" d="m420.8 728.7l-4.7-4.7 639.4-642 4.7 4.7z"/>
+	<path id="Layer 1 copy" class="s0" d="m1059.2 1413l-4.7 4.6-639.4-641.9 4.7-4.7z"/>
+	<path id="Shape 1" class="s0" d="m390 750.3l5.5-5.5 5.2 5.1-5.5 5.6z"/>
+</svg>

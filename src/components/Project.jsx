@@ -3,9 +3,27 @@ import '../css/index.css'
 import '../css/projectsPage.css'
 
 import GreenCircle from '../assets/Green Circle.png'
+import LeftArrow from '../assets/Arrow Icon Left.svg'
+import RightArrow from '../assets/Arrow Icon Right.svg'
+
+import React, { useState } from 'react';
 
 
 function Project({ ProjectTitle, ProjectImage, Logo, BackgroundColour, ProjectDescription }) {
+
+  //Tracks state based on num of items in array
+  //Clicking arrow decreases or increases index
+  //Index num indicates which image to point to
+  const [index, setIndex] = useState(0)
+
+  function NextImage() {
+    setIndex((prevIndex) => (prevIndex + 1) % ProjectImage.length);
+  }
+
+  function PreviousImage() {
+    setIndex((prevIndex) => (prevIndex - 1 + ProjectImage.length) % ProjectImage.length);
+  }
+
   return (
     <div className='d-flex justify-content-center projects-page-component-container' style={{backgroundColor: BackgroundColour, paddingBottom: '2em'}}>
       <div className='component-content-container projects-page-content ' style={{backgroundColor: BackgroundColour}}>
@@ -29,9 +47,21 @@ function Project({ ProjectTitle, ProjectImage, Logo, BackgroundColour, ProjectDe
               </div>
 
               {/* Image */}
-              <div className='col-lg-6 col-md-12 col-sm-12'> 
-                <div className='d-flex' > 
-                  <img className='img-fluid' src={ProjectImage}></img>
+              <div className='col-lg-6 col-md-12 col-sm-12' > 
+                <div style={{height: '100%'}}>
+                  <div className='d-flex flex-row' style={{width: '100%', position: 'relative'}}>
+
+                    <div className='project-navarrow-container' onClick={PreviousImage} style={{left: 0}}>
+                      <img className='img-fluid' src={LeftArrow}/>
+                    </div>
+
+                    <img className='img-fluid' src={ProjectImage[index]} alt="Project Image" style={{cursor: 'pointer'}}/>
+
+                    <div className='project-navarrow-container' onClick={NextImage} style={{right: 0}}>
+                      <img className='img-fluid' src={RightArrow}/>
+                    </div>
+
+                  </div>
                 </div>
               </div>    
 
