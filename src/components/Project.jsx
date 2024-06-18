@@ -9,7 +9,7 @@ import RightArrow from '../assets/Arrow Icon Right.svg'
 import React, { useState } from 'react';
 
 
-function Project({ ProjectTitle, ProjectImage, Logo, BackgroundColour, ProjectDescription }) {
+function Project({ ProjectTitle, ProjectImage, Logo, TechStackImages, BackgroundColour, ProjectDescription }) {
 
   //Tracks state based on num of items in array
   //Clicking arrow decreases or increases index
@@ -76,13 +76,9 @@ function Project({ ProjectTitle, ProjectImage, Logo, BackgroundColour, ProjectDe
                 </div>
 
                 <div className='d-flex flex-row projects-page-tech-stack-images-container'>
-                  <img className='img-fluid projects-page-tech-stack-images' src={GreenCircle} alt='Logo'/>
-                  <img className='img-fluid projects-page-tech-stack-images' src={GreenCircle} alt='Logo'/>
-                  <img className='img-fluid projects-page-tech-stack-images' src={GreenCircle} alt='Logo'/>
-                  <img className='img-fluid projects-page-tech-stack-images' src={GreenCircle} alt='Logo'/>
-                  <img className='img-fluid projects-page-tech-stack-images' src={GreenCircle} alt='Logo'/>
-                  <img className='img-fluid projects-page-tech-stack-images' src={GreenCircle} alt='Logo'/>
-
+                  {TechStackImages.map((url, index) => (
+                    <img className='img-fluid projects-page-tech-stack-images' key={index} src={url} alt={`Logo ${index + 1}`} />
+                  ))}
                 </div>
 
               </div>   

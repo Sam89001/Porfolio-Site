@@ -17,7 +17,18 @@ import PortfolioImage from '../assets/Portfolio 1.png'
 import PortfolioImage2 from '../assets/Portfolio 2.png'
 import PortfolioImage3 from '../assets/Portfolio 3.png'
 
+import HtmlLogo from '../assets/html-5-logo.svg'
+import CssLogo from '../assets/css-logo.svg'
+import BootstrapLogo from '../assets/bootstrap-logo.svg'
+import JavascriptLogo from '../assets/javascript-logo.svg'
+import ReactLogo from '../assets/react-logo.svg'
+import NodeLogo from '../assets/nodejs-logo.svg'
+import MongoLogo from '../assets/mongodb-logo.svg'
+import ViteLogo from '../assets/vitejs-logo.svg'
+
 const DndCreatorImages = [DndCreatorImage, DndCreatorImage2, DndCreatorImage3]
+const DndCreatorTechStack = [HtmlLogo, CssLogo, BootstrapLogo, JavascriptLogo, ReactLogo, NodeLogo, MongoLogo]
+const PortfolioTechStack = [HtmlLogo, CssLogo, BootstrapLogo, JavascriptLogo, ViteLogo, ReactLogo ]
 const PortfolioImages = [PortfolioImage, PortfolioImage2, PortfolioImage3]
 
 import Project from '../components/Project.jsx'
@@ -35,9 +46,12 @@ function ProjectsPage() {
         </div>
       </div>
 
-      <Project ProjectImage={DndCreatorImages} Logo={GreenCircle} ProjectTitle={'Dnd Creator'} BackgroundColour={'var(--backgroundBlue)'}
-      ProjectDescription=
-      {'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'}/>
+      {/* Dnd Creator*/}
+
+      <Project ProjectImage={DndCreatorImages} TechStackImages={DndCreatorTechStack} ProjectTitle={'Dnd Creator'} 
+      BackgroundColour={'var(--backgroundBlue)'} Logo={GreenCircle}
+      ProjectDescription={`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`}/>
       
       {/* Image & Padding*/}
 
@@ -45,9 +59,13 @@ function ProjectsPage() {
         <img className='img-fluid projects-page-squiggle' src={RedSquiggle} ></img>
       </div>
 
-      <Project ProjectImage={PortfolioImages} Logo={GreenCircle} ProjectTitle={'Portfolio'} BackgroundColour={'var(--backgroundGrey)'}
+      {/* Portfolio*/}
+
+      <Project ProjectImage={PortfolioImages} TechStackImages={PortfolioTechStack} ProjectTitle={'Portfolio'} 
+      BackgroundColour={'var(--backgroundBlue)'} Logo={GreenCircle}
       ProjectDescription=
-      {'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'}/>
+      {`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`}/>
 
       {/* Image & Padding*/}
 
@@ -55,9 +73,13 @@ function ProjectsPage() {
         <img className='img-fluid projects-page-squiggle' src={GreenSquiggle}></img>
       </div>
 
-      <Project ProjectImage={DndCreatorImages} Logo={GreenCircle} ProjectTitle={'Portfolio'} BackgroundColour={'var(--backgroundGrey)'}
+      {/* Random Project*/}
+
+      <Project ProjectImage={DndCreatorImages} TechStackImages={DndCreatorTechStack} ProjectTitle={'Portfolio'}
+       BackgroundColour={'var(--backgroundBlue)'} Logo={GreenCircle}
       ProjectDescription=
-      {'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'}/>
+      {`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`}/>
 
       {/* Image & Padding*/}
 
