@@ -75,6 +75,11 @@
   padding-right: 5px;
 }
 
+.projects-page-small-icon-container {
+  max-height: 2.7rem;
+  max-width: 20%;
+}
+
 
 .projects-page-tech-stack-images-container {
   height: 2.5em;
@@ -119,7 +124,9 @@
 }
 
 @media (max-width: 990px) {
-  .projects-page-small-project-title {
+  .projects-page-small-project-title,
+  .projects-page-small-icon-container,
+  .projects-page-small-icon {
     display: none;
   }
 }

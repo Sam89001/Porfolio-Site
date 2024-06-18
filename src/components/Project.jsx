@@ -66,7 +66,21 @@ function Project({ ProjectTitle, ProjectImage, Logo, TechStackImages, Background
 
               {/* Text */}
               <div className='col-lg-6 col-md-12 col-sm-12 d-flex flex-column'> 
-                <h2 className='projects-page-small-project-title'>{ProjectTitle}</h2>
+
+                <div className='d-flex flex-row justify-content-between' >
+                  <h2 className='projects-page-small-project-title '>{ProjectTitle}</h2>
+                  <div className='d-flex justify-content-end align-items-end projects-page-small-icon-container'>
+                    {Logo.map((url, index) => (
+                      <img
+                        className='img-fluid projects-page-small-icon'
+                        key={index}
+                        src={url}
+                        alt={`Link ${index + 1}`}
+                        style={{height: '55%', paddingRight: '0.5rem'}}
+                      />
+                    ))}
+                  </div>
+                </div>
 
                 <p className='project-page-project-paragraph standard-bottom-padding'>{ProjectDescription}</p>
 
