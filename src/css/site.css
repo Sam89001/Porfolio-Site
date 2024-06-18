@@ -12,6 +12,15 @@ html {
   background-color: white;
 }
 
+.toast-notification {
+  font: 'Josefin Sans', sans-serif 2rem;
+  background-color: var(--textGrey);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  z-index: 9999; 
+}
+
 /* Titles */
 
 .main-paragraph,

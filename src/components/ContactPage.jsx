@@ -36,8 +36,10 @@ function ContactPage() {
         setName('');
         setEmail('');
         setMessage('');
+        toast.success('Email sent!')
       })
       .catch((error) => {
+        toast.error('Error send email')
         console.error('error', response)
       })
   };
@@ -127,7 +129,21 @@ function ContactPage() {
 
             </form>
 
-            <Toaster /> 
+            <Toaster 
+              toastOptions={{ 
+                className: 'toast-notification', 
+                style: {
+                  fontFamily: 'Josefin Sans, sans-serif',
+                  fontSize: '1.5rem',
+                  backgroundColor: 'var(--textGrey)',
+                  color: '#fff',
+                  padding: '10px 20px',
+                  borderRadius: '4px',
+                  zIndex: '9999',
+                } 
+              }}
+            />
+
           </div>
 
         </div>
