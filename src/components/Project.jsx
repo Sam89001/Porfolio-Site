@@ -30,24 +30,23 @@ function Project({ ProjectTitle, ProjectImage, Logo, TechStackImages, Background
             <div className='row h-100'>
 
               {/* Hideable Title*/}
-              <div className='d-flex flex-row justify-content-between' style={{width: '100%'}}>
-
-                <h1 className='projects-page-project-title projects-page-hideable-content'>{ProjectTitle}</h1>
-
-                <div className='d-flex projects-page-social-media-image-container '>
-                  <div className='projects-page-social-media-image projects-page-hideable-content'>
-                    <img className='img-fluid' src={Logo} alt='Logo'/>
-                  </div>
-
-                  <div className='projects-page-social-media-image projects-page-hideable-content'>
-                    <img className='img-fluid' src={Logo} alt='Logo'/>
-                  </div>
+              <div className='d-flex flex-row justify-content-between' style={{ width: '100%', marginBottom: '1rem', maxHeight: '5rem' }}>
+                <h1 className='projects-page-project-title projects-page-hideable-content text-center'>{ProjectTitle}</h1>
+                <div className='align-items-end projects-page-social-media-image-container projects-page-hideable-content'>
+                  {Logo.map((url, index) => (
+                    <img
+                      className='img-fluid projects-page-hideable-content projects-page-social-media-image'
+                      key={index}
+                      src={url}
+                      alt={`Link ${index + 1}`}
+                    />
+                  ))}
                 </div>
-
               </div>
 
+
               {/* Image */}
-              <div className='col-lg-6 col-md-12 col-sm-12' > 
+              <div className='col-lg-6 col-md-12 col-sm-12' style={{marginBottom: '1rem'}}> 
                 <div style={{height: '100%'}}>
                   <div className='d-flex flex-row' style={{width: '100%', position: 'relative'}}>
 
@@ -71,8 +70,8 @@ function Project({ ProjectTitle, ProjectImage, Logo, TechStackImages, Background
 
                 <p className='project-page-project-paragraph standard-bottom-padding'>{ProjectDescription}</p>
 
-                <div className='projects-page-sub-header' style={{marginTop: 'auto'}}>
-                  <h3>Tech Stack</h3>
+                <div className='projects-page-sub-header-container' style={{marginTop: 'auto'}}>
+                  <h3 className='projects-page-sub-header'>Tech Stack</h3>
                 </div>
 
                 <div className='d-flex flex-row projects-page-tech-stack-images-container'>

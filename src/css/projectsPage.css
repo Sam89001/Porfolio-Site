@@ -20,13 +20,15 @@
 .projects-page-project-description,
 .projects-page-small-project-title,
 .projects-page-project-title,
-.project-page-project-paragraph {
+.project-page-project-paragraph,
+.projects-page-sub-header {
   font-family: 'Josefin Sans', sans-serif;
 }
 
 .projects-page-project-title {
   font-size: 5rem;
   margin: 0;
+  align-self: flex-end
 }
 
 .projects-page-small-project-title {
@@ -42,10 +44,14 @@
   letter-spacing: -1px;
 }
 
-.projects-page-sub-header {
-  font-weight: 400; 
+.projects-page-sub-header-container {
   width: 100%;
   border-bottom: 1px solid var(--textGrey);
+  margin-bottom: 10px;
+}
+
+.projects-page-sub-header {
+  font-weight: 400; 
 }
 
 
@@ -53,17 +59,28 @@
 /* Images  */
 
 .projects-page-social-media-image-container {
-  width: 10%;
+  margin-top: auto;
+  width: auto;
+  max-width: 20%;
+  height: 80%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-bottom: 1.5rem;
 }
 
 .projects-page-social-media-image {
-  height: 10%;
+  max-height: 100%;
+  object-fit: contain;
+  padding-right: 5px;
 }
+
 
 .projects-page-tech-stack-images-container {
   height: 2.5em;
   width: 100%;
   overflow-y: auto;
+  
   padding-bottom: 10px;
 }
 
@@ -109,12 +126,45 @@
 
 @media (max-width: 767px) {
   .projects-page-project-title {
-    font-size: 3rem;
+    font-size: 4rem;
+  }
+  .projects-page-social-media-image-container {
+    height: 60%;
   }
 }
 
 @media (max-width: 500px) {
   .projects-page-project-title {
+    font-size: 3.5rem;
+  }
+  .projects-page-social-media-image-container {
+    height: 45%;
+    padding-bottom: 0.9rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .projects-page-project-title {
+    font-size: 3rem;
+  }
+  .projects-page-social-media-image-container {
+    height: 45%;
+    padding-bottom: 1rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .projects-page-project-title {
     font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .projects-page-project-title {
+    font-size: 2rem;
+  }
+  .projects-page-social-media-image-container {
+    height: 50%;
+    padding-bottom: 1rem;
   }
 }

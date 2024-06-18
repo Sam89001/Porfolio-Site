@@ -3,7 +3,6 @@ import '../css/index.css'
 import '../css/projectsPage.css'
 import '../css/padding.css'
 
-import GreenCircle from '../assets/Green Circle.png'
 import RedSquiggle from '../assets/Red Squiggle.png'
 import GreenSquiggle from '../assets/Green Squiggle.png'
 import GreenSquigglePadding from '../assets/Green Squiggle Padding.webp'
@@ -17,6 +16,9 @@ import PortfolioImage from '../assets/Portfolio 1.png'
 import PortfolioImage2 from '../assets/Portfolio 2.png'
 import PortfolioImage3 from '../assets/Portfolio 3.png'
 
+import GithubLogo from '../assets/github-logo.svg'
+import HyperlinkLogo from '../assets/hyperlink-logo.svg'
+
 import HtmlLogo from '../assets/html-5-logo.svg'
 import CssLogo from '../assets/css-logo.svg'
 import BootstrapLogo from '../assets/bootstrap-logo.svg'
@@ -25,11 +27,14 @@ import ReactLogo from '../assets/react-logo.svg'
 import NodeLogo from '../assets/nodejs-logo.svg'
 import MongoLogo from '../assets/mongodb-logo.svg'
 import ViteLogo from '../assets/vitejs-logo.svg'
+import FigmaLogo from '../assets/figma-logo.svg'
 
 const DndCreatorImages = [DndCreatorImage, DndCreatorImage2, DndCreatorImage3]
-const DndCreatorTechStack = [HtmlLogo, CssLogo, BootstrapLogo, JavascriptLogo, ReactLogo, NodeLogo, MongoLogo]
-const PortfolioTechStack = [HtmlLogo, CssLogo, BootstrapLogo, JavascriptLogo, ViteLogo, ReactLogo ]
+const DndCreatorTechStack = [FigmaLogo, HtmlLogo, CssLogo, BootstrapLogo, JavascriptLogo, ReactLogo, NodeLogo, MongoLogo]
+const DndCreatorLinks = [GithubLogo, HyperlinkLogo]
+
 const PortfolioImages = [PortfolioImage, PortfolioImage2, PortfolioImage3]
+const PortfolioTechStack = [FigmaLogo, HtmlLogo, CssLogo, BootstrapLogo, JavascriptLogo, ViteLogo, ReactLogo ]
 
 import Project from '../components/Project.jsx'
 
@@ -49,9 +54,12 @@ function ProjectsPage() {
       {/* Dnd Creator*/}
 
       <Project ProjectImage={DndCreatorImages} TechStackImages={DndCreatorTechStack} ProjectTitle={'Dnd Creator'} 
-      BackgroundColour={'var(--backgroundBlue)'} Logo={GreenCircle}
-      ProjectDescription={`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`}/>
+      BackgroundColour={'var(--backgroundBlue)'} Logo={DndCreatorLinks}
+      ProjectDescription={`DndCreator is an SPA CRUD tool that allows users to play and host sessions with character sheets created in DndCreator. 
+      It features user accounts encrypted in a MongoDB database with bcrypt and JWT authentication for user session data, connected to a RESTful
+       API with a NodeJS back-end to perform CRUD requests. For the front-end, it has a draggable grid system where the grid can be resized and 
+       adjusted to fit pre-set or user-loaded images. Continually, DndCreator has other helpful tools, such as a calculator and dice roller, 
+       that save the user's roll history.`}/>
       
       {/* Image & Padding*/}
 
@@ -62,10 +70,11 @@ function ProjectsPage() {
       {/* Portfolio*/}
 
       <Project ProjectImage={PortfolioImages} TechStackImages={PortfolioTechStack} ProjectTitle={'Portfolio'} 
-      BackgroundColour={'var(--backgroundBlue)'} Logo={GreenCircle}
+      BackgroundColour={'var(--backgroundBlue)'} Logo={DndCreatorLinks}
       ProjectDescription=
-      {`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`}/>
+      {`My portfolio website! Designed in Figma and run with Vite, my portfolio is a fully dynamic SPA designed for efficiency. 
+      Images are optimised in WEBP or SVG format for fast loading; Vite runs quickly and efficiently; Bootstrap seamlessly adjusts 
+      the SPA to mobile and tablet screen sizes; and EmailJS allows users to easily contact me.`}/>
 
       {/* Image & Padding*/}
 
@@ -76,7 +85,7 @@ function ProjectsPage() {
       {/* Random Project*/}
 
       <Project ProjectImage={DndCreatorImages} TechStackImages={DndCreatorTechStack} ProjectTitle={'Portfolio'}
-       BackgroundColour={'var(--backgroundBlue)'} Logo={GreenCircle}
+       BackgroundColour={'var(--backgroundBlue)'} Logo={DndCreatorLinks}
       ProjectDescription=
       {`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`}/>
