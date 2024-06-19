@@ -20,6 +20,45 @@
   width: 100%;
 }
 
+.contact-page-icon-container{
+  height: 100%;
+  margin-right: 10px;
+  width: 10%;
+}
+
+
+
+
+/* Text */
+.contact-page-social-title,
+.contact-page-social-content,
+.contact-page-social-media-link,
+.contact-page-form-button {
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0;
+}
+
+.contact-page-social-title {
+  font-weight: 400;
+  font-size: 2rem;
+  color: var(--red);
+}
+
+.contact-page-social-content {
+  font-size: 1.2rem;
+}
+
+.contact-page-social-media-link-container {
+  text-decoration: none; /* Removes underline */
+  color: inherit; /* Inherits the color from its parent */
+}
+
+.contact-page-social-media-link {
+  font-size: 1.2rem;
+}
+
+/* Form */
+
 .contact-page-input-field,
 .contact-page-input-message-field  {
   background-color: transparent;
@@ -47,4 +86,41 @@
 
 .contact-page-input-message-field {
   min-height: 15rem;
+}
+
+.contact-page-form-button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contact-page-form-button {
+  border: solid 2px var(--textGrey);
+  background-color: transparent;
+  font-size: 1rem;
+  padding: 0.5rem;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; 
+}
+
+.contact-page-form-button:hover {
+  border-color: transparent;
+  background-color: var(--red);
+  color: white;
+  font-weight: 800;
+}
+
+/* Media Queries */
+
+@media (max-width: 500px) {
+  .contact-page-social-title {
+    font-size: 2rem;
+  }
+  .contact-page-social-content {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .contact-page-social-content {
+    font-size: 1rem;
+  }
 }

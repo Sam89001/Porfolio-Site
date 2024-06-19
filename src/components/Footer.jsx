@@ -12,7 +12,7 @@ function Footer() {
           <p className='footer-text'>© 2024 Samuel Cole, All Rights Reserved</p>
         </div>
 
-        <div className='d-flex w-100 ' style={{ height: '40%', paddingRight: '1rem', maxWidth: '20%' }}>
+        <div className='d-flex w-100 footer-logos-container'>
           <a className='d-flex justify-content-end' href="https://github.com/Sam89001" target="_blank" rel="noopener noreferrer">
             <img className='img-fluid' src={GithubLogo} alt='Logo' style={{ height: '100%', paddingRight: '0.5rem' }} />
           </a>

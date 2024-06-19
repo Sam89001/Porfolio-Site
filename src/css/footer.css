@@ -3,6 +3,12 @@
   background-color: white;
 }
 
+.footer-logos-container {
+  height: '40%';
+  padding-right: 1rem;
+  max-width: 8%;
+}
+
 .footer-content {
   max-width: 1300px;
   background-color: transparent;
@@ -13,8 +19,29 @@
 .footer-text {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 1rem;
-  margin: 0;
-  white-space: nowrap;
+  margin: 0 10px 0 0;
 }
 
+@media (max-width: 900px) {
+  .footer-logos-container {
+    max-width: 12%;
+  }
+}
 
+@media (max-width: 750px) {
+  .footer-logos-container {
+    max-width: 15%;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer-logos-container {
+    max-width: 20%;
+  }
+}
+
+@media (max-width: 350px) {
+  .footer-logos-container {
+    max-width: 30%;
+  }
+}

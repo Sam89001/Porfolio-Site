@@ -4,6 +4,10 @@ import '../css/contactPage.css'
 
 import Email from '../assets/email-logo.svg'
 import Phone from '../assets/phone-logo.svg'
+import Computer from '../assets/computer-logo.svg'
+
+import Github from '../assets/github-logo.svg'
+import Linkedin from '../assets/linkedin-logo.svg'
 
 import React, { useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
@@ -47,7 +51,7 @@ function ContactPage() {
   return (
     <section className='d-flex justify-content-center contact-page-component-container' id="section4">
       <div className='component-content-container contact-page-content'>
-        <div className='row h-100'>
+        <div className='row d-flex h-100 justify-content-center'>
 
           <div className='col-12'>
             <h1 className='main-header double-standard-bottom-padding'>Lets Connect!</h1>
@@ -55,37 +59,90 @@ function ContactPage() {
 
           {/* Text */}
 
-          <div className='col-lg-6 col-md-12 col-sm-12 row'>
+          <div className='col-lg-6 col-md-12 col-sm-12 row' style={{marginBottom: '2rem'}}>
 
-            {/* Individual columns for each item so they can collaps at medium screen sizes
-             Likely col-12 for normal screens and col-4 for medium screen sizes and col-12 for small screen-sizes*/}
-
-             <div className='col-lg-12 col-md-12 col-sm-4 col-xs-12 standard-bottom-padding'>
-                <div className='d-flex flex-row' style={{maxHeight: '4rem', height: '100%'}}>
-                  <img src={Email}/>
+             <div className='col-12' style={{padding: '0px 0px 2rem 0px'}}>
+                <div className='d-flex'>
                   <div className='d-flex flex-column' >
-                    <h2 style={{margin: '0'}}>Email Me:</h2>
-                    <p style={{margin: '0'}}>Samscreativespace'@'gmail.com</p>
+                    <h2 className='contact-page-social-title'>Email Me:</h2>
+                    <p className='contact-page-social-content'>Samscreativespace'@'gmail.com</p>
                   </div>
                 </div>
              </div>
 
-             <div className='col-lg-12 col-md-12 col-sm-4 col-xs-12 standard-bottom-padding'>
-                <div className='d-flex flex-row' style={{maxHeight: '4rem', height: '100%'}}>
-                  <img src={Phone}/>
+             <div className='col-12' style={{padding: '0px 0px 2rem 0px'}}>
+                <div className='d-flex' >
                   <div className='d-flex flex-column' >
-                    <h2 style={{margin: '0'}}>Call Me:</h2>
-                    <p style={{margin: '0'}}>+44 7527 063 138</p>
+                    <h2 className='contact-page-social-title' >Call Me:</h2>
+                    <p className='contact-page-social-content'>+44 7527 063 138</p>
                   </div>
                 </div>
              </div>
 
-             <div className='col-lg-12 col-md-12 col-sm-4 col-xs-12 standard-bottom-padding'>
-                <div className='d-flex' style={{maxHeight: '4rem', height: '100%'}}>
-                  <img src={Email}/>
+             <div className='col-12' style={{padding: '0px 0px 2rem 0px'}}>
+                <div className='d-flex' >
+
                   <div className='d-flex flex-column' >
-                    <h2 style={{margin: '0'}}>Email Me:</h2>
-                    <p style={{margin: '0'}}>Samscreativespace'@'gmail.com</p>
+                    <h2 className='contact-page-social-title' >Socials:</h2>
+
+                    <div className='d-flex flex-column' >
+
+                      <div className='d-flex flex-row' style={{marginBottom: '5px'}}>
+                        <a className='d-flex' href='https://github.com/Sam89001' target="_blank" rel="noopener noreferrer" style={{width: '5%'}}>
+                          <img className='img-fluid' src={Github} />
+                        </a>
+
+                        <a className='contact-page-social-media-link-container' href='https://github.com/Sam89001' target="_blank" rel="noopener noreferrer"> 
+                          <p className='contact-page-social-media-link'>github.com/Sam89001</p>
+                        </a>
+                      </div>
+
+                      <div className='d-flex flex-row'>
+                        <a className='d-flex' href='www.linkedin.com/in/samuel-cole89001' target="_blank" rel="noopener noreferrer" style={{width: '5%'}}>
+                          <img className='img-fluid' src={Linkedin} />
+                        </a>
+
+                        <a className='contact-page-social-media-link-container' href='https://github.com/Sam89001' target="_blank" rel="noopener noreferrer"> 
+                          <p className='contact-page-social-media-link'>linkedin.com/in/samuel-cole89001</p>
+                        </a>
+                      </div>
+                      
+                    </div>
+                    
+                  </div>
+                </div>
+             </div>
+
+             <div className='col-12' style={{padding: '0px 0px 2rem 0px'}}>
+                <div className='d-flex' >
+
+                  <div className='d-flex flex-column' >
+                    <h2 className='contact-page-social-title' >Socials:</h2>
+
+                    <div className='d-flex flex-column' >
+
+                      <div className='d-flex flex-row' style={{marginBottom: '5px'}}>
+                        <a className='d-flex' href='https://github.com/Sam89001' target="_blank" rel="noopener noreferrer" style={{width: '5%'}}>
+                          <img className='img-fluid' src={Github} />
+                        </a>
+
+                        <a className='contact-page-social-media-link-container' href='https://github.com/Sam89001' target="_blank" rel="noopener noreferrer"> 
+                          <p className='contact-page-social-media-link'>github.com/Sam89001</p>
+                        </a>
+                      </div>
+
+                      <div className='d-flex flex-row'>
+                        <a className='d-flex' href='www.linkedin.com/in/samuel-cole89001' target="_blank" rel="noopener noreferrer" style={{width: '5%'}}>
+                          <img className='img-fluid' src={Linkedin} />
+                        </a>
+
+                        <a className='contact-page-social-media-link-container' href='https://github.com/Sam89001' target="_blank" rel="noopener noreferrer"> 
+                          <p className='contact-page-social-media-link'>linkedin.com/in/samuel-cole89001</p>
+                        </a>
+                      </div>
+                      
+                    </div>
+                    
                   </div>
                 </div>
              </div>
@@ -94,7 +151,8 @@ function ContactPage() {
 
           {/* Form */}
 
-          <div className='col-lg-6 col-md-12 col-sm-12 flex-column'>
+          <div className='col-lg-6 col-md-12 col-sm-12 flex-column d-flex' style={{marginBottom: '2rem'}}>
+            
 
             <form onSubmit={sendEmail}>
 
@@ -125,7 +183,9 @@ function ContactPage() {
                 onChange={(e) => { setMessage(e.target.value)}} />
               </div>
 
-              <input type='submit' value="Send"></input>
+              <div className='contact-page-form-button-container'>
+                <input className='contact-page-form-button' type='submit' value="Send Message >"/>
+              </div>
 
             </form>
 
