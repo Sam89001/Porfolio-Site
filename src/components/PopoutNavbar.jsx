@@ -51,8 +51,12 @@ function PopoutNavbar({ isVisible, onClose }) {
 
       {/* Bottom Section */}
       <div className='d-flex w-100 align-items-center' style={{ height: '15%', marginTop: 'auto' }}>
-
+        <div className='d-flex w-100 h-100'style={{padding: '3rem 3rem 3rem 2rem'}}>
+          <img className='img-fluid' src={GithubLogo} style={{marginRight: '1rem'}}/>
+          <img className='img-fluid' src={LinkedInLogo} />
+        </div>
       </div>
+
     </div>
   );
 }
