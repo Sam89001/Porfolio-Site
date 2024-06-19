@@ -59,3 +59,19 @@
     display: none
   }
 }
+
+/* Popout Navbar */
+
+.popout-navbar {
+  position: fixed;
+  z-index: 9998;
+  background-color: ;
+}
+
+.popout-link-text {
+
+}
+
+.popout-close-button {
+
+}

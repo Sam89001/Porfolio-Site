@@ -6,7 +6,7 @@ import LinkedInLogo from '../assets/linkedin-logo.svg'
 function Footer() {
   return (
     <div className='d-flex justify-content-center align-items-center w-100 footer-container'>
-      <div className='d-flex align-items-center w-100 h-100 footer-content justify-content-between'>
+      <div className='d-flex align-items-center h-100 footer-content justify-content-between' style={{width: '100%'}}>
         
         <div className='d-flex' >
           <p className='footer-text'>© 2024 Samuel Cole, All Rights Reserved</p>
