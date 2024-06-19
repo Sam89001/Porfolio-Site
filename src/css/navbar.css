@@ -64,8 +64,16 @@
 
 .popout-navbar {
   position: fixed;
+  top: 0;
+  left: 0;
   z-index: 9998;
-  background-color: ;
+  background-color: red;
+  transition: transform 0.3s ease-in-out; 
+  transform: translateX(-100%); 
+}
+
+.popout-navbar.show {
+  transform: translateX(0); 
 }
 
 .popout-link-text {
