@@ -4,6 +4,8 @@ import Logo from '../assets/SC.png';
 import HamburgerMenu from '../assets/Hamburger Menu.webp';
 import PopoutNavbar from './PopoutNavbar';
 
+import DownloadableFile from '../assets/Samuel Cole Resume.pdf'
+
 function Header() {
   const [isPopoutOpen, setIsPopoutOpen] = useState(false);
 
@@ -11,6 +13,24 @@ function Header() {
     setIsPopoutOpen(!isPopoutOpen);
   };
 
+  const handleDownload = async () => {
+    const url = DownloadableFile; 
+    try {
+      const response = await fetch(url);
+      const blob = await response.blob();
+      const blobUrl = URL.createObjectURL(blob);
+
+      const link = document.createElement('a');
+      link.href = blobUrl;
+      link.setAttribute('download', 'Samuel Cole Resume.pdf');
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    } catch (error) {
+      console.error('Error fetching or downloading file:', error);
+    }
+  };
+    
   return (
     <div className='d-flex justify-content-center align-items-center w-100 navbar-container'>
       <div className='d-flex justify-content-center align-items-center w-100 h-100 navbar-content'>
@@ -51,7 +71,7 @@ function Header() {
         </div>
 
         <div className='d-flex w-50 justify-content-end align-items-center'>
-          <button className='navbar-button black-white-button-styling'>Download Resume</button>
+          <button className='navbar-button black-white-button-styling' onClick={handleDownload}>Download Resume</button>
         </div>
       </div>
 
