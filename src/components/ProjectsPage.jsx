@@ -54,12 +54,14 @@ function ProjectsPage() {
       {/* Dnd Creator*/}
 
       <Project ProjectImage={DndCreatorImages} TechStackImages={DndCreatorTechStack} ProjectTitle={'Dnd Creator'} 
-      BackgroundColour={'var(--backgroundBlue)'} Logo={DndCreatorLinks}
+      BackgroundColour={'var(--backgroundBlue)'} 
+      Logo={DndCreatorLinks}
       ProjectDescription={`Dnd Creator is an SPA CRUD tool that allows users to play and host sessions with character sheets created in Dnd Creator. 
       It features user accounts encrypted in a MongoDB database with bcrypt and JWT authentication for user session data, connected to a RESTful
        API with a NodeJS back-end to perform CRUD requests. For the front-end, it has a draggable grid system where the grid can be resized and 
        adjusted to fit pre-set or user-loaded images. Continually, DndCreator has other helpful tools, such as a calculator and dice roller, 
-       that save the user's roll history.`}/>
+       that save the user's roll history.`}
+      />
       
       {/* Image & Padding*/}
 

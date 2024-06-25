@@ -106,7 +106,7 @@ function Project({ ProjectTitle, ProjectImage, Logo, TechStackImages, Background
             </div>   
       </div>
 
-      <Popup isVisible={isPopoutOpen} onClose={togglePopout} />
+      <Popup isVisible={isPopoutOpen} onClose={togglePopout} PopupProjectName={ProjectTitle}/>
     </div>
     )
 }

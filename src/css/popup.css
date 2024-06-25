@@ -1,19 +1,45 @@
 .popup {
   position: fixed;
-  width: 80vw;
-  height: 90vh;
-  background-color: green;
-  z-index: 9999;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 255, 255, 0.1); 
+  backdrop-filter: blur(5px);
+  z-index: 9998; 
+  display: none;
 }
 
 .popup.show {
-  visibility: visible;
+  display: block;
 }
-
 .popup.hide {
-  visibility: none;
   display: none;
 }
+
+.popup-style {
+  position: fixed;
+  width: 80vw;
+  height: 90vh;
+  background-color: green;
+  z-index: 9999; /* Ensure it's on top of the blurred background */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+}
+
+.popup-header,
+.popup-subheader {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+}
+
+.popup-header {
+  font-size: 4rem;
+}
+
+.popup-subheader {
+  font-size: 1rem;
+}
+
