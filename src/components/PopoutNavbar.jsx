@@ -1,7 +1,7 @@
 import React from 'react';
 import '../css/navbar.css';
-import Logo from '../assets/SC.png';
 
+import Logo from '../assets/SC.png';
 import GithubLogo from '../assets/github-logo.svg'
 import LinkedInLogo from '../assets/linkedin-logo.svg'
 

@@ -8,21 +8,27 @@ import RightArrow from '../assets/Arrow Icon Right.svg'
 
 import React, { useState } from 'react';
 
+import Popup from '../components/Popup.jsx'
+
 
 function Project({ ProjectTitle, ProjectImage, Logo, TechStackImages, BackgroundColour, ProjectDescription }) {
 
   //Tracks state based on num of items in array
   //Clicking arrow decreases or increases index
   //Index num indicates which image to point to
+  const [isPopoutOpen, setIsPopoutOpen] = useState(false);
   const [index, setIndex] = useState(0)
 
   function NextImage() {
     setIndex((prevIndex) => (prevIndex + 1) % ProjectImage.length);
   }
-
   function PreviousImage() {
     setIndex((prevIndex) => (prevIndex - 1 + ProjectImage.length) % ProjectImage.length);
   }
+
+  const togglePopout = () => {
+    setIsPopoutOpen(!isPopoutOpen);
+  };
 
   return (
     <div className='d-flex justify-content-center projects-page-component-container' style={{backgroundColor: BackgroundColour, paddingBottom: '2em'}}>
@@ -54,7 +60,7 @@ function Project({ ProjectTitle, ProjectImage, Logo, TechStackImages, Background
                       <img className='img-fluid' src={LeftArrow}/>
                     </div>
 
-                    <img className='img-fluid' src={ProjectImage[index]} alt="Project Image" style={{cursor: 'pointer'}}/>
+                    <img className='img-fluid' src={ProjectImage[index]} alt="Project Image" style={{cursor: 'pointer'}} onClick={togglePopout}/>
 
                     <div className='project-navarrow-container' onClick={NextImage} style={{right: 0}}>
                       <img className='img-fluid' src={RightArrow}/>
@@ -77,6 +83,7 @@ function Project({ ProjectTitle, ProjectImage, Logo, TechStackImages, Background
                         src={url}
                         alt={`Link ${index + 1}`}
                         style={{height: '55%', paddingRight: '0.5rem'}}
+                        
                       />
                     ))}
                   </div>
@@ -98,6 +105,8 @@ function Project({ ProjectTitle, ProjectImage, Logo, TechStackImages, Background
 
             </div>   
       </div>
+
+      <Popup isVisible={isPopoutOpen} onClose={togglePopout} />
     </div>
     )
 }

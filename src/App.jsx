@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './css/index.css'
 import PopoutNavbar from './components/PopoutNavbar.jsx'
+import Popup from './components/Popup.jsx'
 import TopPadding from './components/TopPadding.jsx'
 import Header from './components/Header.jsx'
 import SplashPage from './components/SplashPage.jsx'
@@ -18,6 +19,7 @@ function App() {
   return (
     <div>
       <PopoutNavbar/>
+      <Popup/>
       <TopPadding/>
       <Header/>
       <SplashPage/>

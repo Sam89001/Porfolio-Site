@@ -1,0 +1,19 @@
+.popup {
+  position: fixed;
+  width: 80vw;
+  height: 90vh;
+  background-color: green;
+  z-index: 9999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.popup.show {
+  visibility: visible;
+}
+
+.popup.hide {
+  visibility: none;
+  display: none;
+}
