@@ -94,8 +94,8 @@ function ContactPage() {
                     <div className='d-flex flex-column' >
 
                       <div className='d-flex flex-row' style={{marginBottom: '5px'}}>
-                        <a className='d-flex' href='https://github.com/Sam89001' target="_blank" rel="noopener noreferrer" style={{width: '5%'}}>
-                          <img className='img-fluid' src={Github} />
+                        <a className='d-flex contact-page-social-media-image' href='https://github.com/Sam89001' target="_blank" rel="noopener noreferrer" style={{width: '5%'}}>
+                          <img className='img-fluid contact-page-social-media-image' src={Github} />
                         </a>
 
                         <a className='contact-page-social-media-link-container' href='https://github.com/Sam89001' target="_blank" rel="noopener noreferrer"> 
@@ -104,11 +104,11 @@ function ContactPage() {
                       </div>
 
                       <div className='d-flex flex-row'>
-                        <a className='d-flex' href='https://www.linkedin.com/in/samuel-cole89001/' target="_blank" rel="noopener noreferrer" style={{width: '5%'}}>
-                          <img className='img-fluid' src={Linkedin} />
+                        <a className='d-flex contact-page-social-media-image' href='https://www.linkedin.com/in/samuel-cole89001/' target="_blank" rel="noopener noreferrer" style={{width: '5%'}}>
+                          <img className='img-fluid contact-page-social-media-image' src={Linkedin} />
                         </a>
 
-                        <a className='contact-page-social-media-link-container' href='https://github.com/Sam89001' target="_blank" rel="noopener noreferrer"> 
+                        <a className='contact-page-social-media-link-container ' href='https://github.com/Sam89001' target="_blank" rel="noopener noreferrer"> 
                           <p className='contact-page-social-media-link'>linkedin.com/in/samuel-cole89001</p>
                         </a>
                       </div>

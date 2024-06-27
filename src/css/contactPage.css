@@ -57,6 +57,18 @@
   font-size: 1.2rem;
 }
 
+/* Images */
+
+.contact-page-social-media-image {
+  transition: opacity 0.1s ease-in;
+}
+
+.contact-page-social-media-image:hover {
+   opacity: 0.6; 
+}
+
+
+
 /* Form */
 
 .contact-page-input-field,

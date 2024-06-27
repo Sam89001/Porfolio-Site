@@ -14,11 +14,11 @@ function Footer() {
 
         <div className='d-flex w-100 footer-logos-container'>
           <a className='d-flex justify-content-end' href="https://github.com/Sam89001" target="_blank" rel="noopener noreferrer">
-            <img className='img-fluid' src={GithubLogo} alt='Logo' style={{ height: '100%', paddingRight: '0.5rem' }} />
+            <img className='img-fluid footer-logo-image' src={GithubLogo} alt='Logo' style={{ paddingRight: '0.5rem' }} />
           </a>
 
           <a className='d-flex justify-content-end' href="https://www.linkedin.com/in/samuel-cole-586582229/" target="_blank" rel="noopener noreferrer">
-            <img className='img-fluid' src={LinkedInLogo} alt='Logo' style={{ height: '100%' }} />
+            <img className='img-fluid footer-logo-image' src={LinkedInLogo} alt='Logo'/>
           </a>
         </div>
 

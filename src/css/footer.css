@@ -9,6 +9,14 @@
   max-width: 8%;
 }
 
+.footer-logo-image {
+  height: '100%';
+  transition: opacity 0.1s ease-in;
+}
+.footer-logo-image:hover {
+  opacity: 0.3;
+}
+
 .footer-content {
   max-width: 1300px;
   background-color: transparent;
