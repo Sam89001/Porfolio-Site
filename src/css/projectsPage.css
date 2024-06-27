@@ -66,18 +66,36 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  padding-bottom: 1.5rem;
+  padding-bottom: 1.6rem;
 }
 
 .projects-page-social-media-image {
-  max-height: 100%;
+  max-height: 1.5rem;
   object-fit: contain;
   padding-right: 5px;
+  transition: opacity 0.1s ease-in;
+}
+
+.projects-page-social-media-image:hover {
+  opacity: 0.3;
 }
 
 .projects-page-small-icon-container {
-  max-height: 2.7rem;
+  max-height: 3rem;
   max-width: 20%;
+}
+
+.projects-page-small-icon {
+  transition: opacity 0.1s ease-in;
+}
+.projects-page-small-icon:hover {
+  opacity: 0.3;
+}
+
+.projects-page-anchor-container {
+  max-height: 100%;
+  max-width: 25%;
+  padding-bottom: 0.5rem;
 }
 
 

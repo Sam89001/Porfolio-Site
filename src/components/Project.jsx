@@ -39,13 +39,14 @@ function Project({ ProjectTitle, ProjectImage, Logo, TechStackImages, Background
               <div className='d-flex flex-row justify-content-between' style={{ width: '100%', marginBottom: '1rem', maxHeight: '5rem' }}>
                 <h1 className='projects-page-project-title projects-page-hideable-content text-center'>{ProjectTitle}</h1>
                 <div className='align-items-end projects-page-social-media-image-container projects-page-hideable-content'>
-                  {Logo.map((url, index) => (
-                    <img
-                      className='img-fluid projects-page-hideable-content projects-page-social-media-image'
-                      key={index}
-                      src={url}
-                      alt={`Link ${index + 1}`}
-                    />
+                  {Logo.map((link, index) => (
+                    <a className='projects-page-social-media-image' key={index} href={link.url} target="_blank" rel="noopener noreferrer">
+                      <img
+                        className='img-fluid projects-page-hideable-content projects-page-social-media-image'
+                        src={link.image}
+                        alt={`Link ${index + 1}`}
+                      />
+                    </a>
                   ))}
                 </div>
               </div>
@@ -76,15 +77,15 @@ function Project({ ProjectTitle, ProjectImage, Logo, TechStackImages, Background
                 <div className='d-flex flex-row justify-content-between' >
                   <h2 className='projects-page-small-project-title '>{ProjectTitle}</h2>
                   <div className='d-flex justify-content-end align-items-end projects-page-small-icon-container'>
-                    {Logo.map((url, index) => (
-                      <img
-                        className='img-fluid projects-page-small-icon'
-                        key={index}
-                        src={url}
-                        alt={`Link ${index + 1}`}
-                        style={{height: '55%', paddingRight: '0.5rem'}}
-                        
-                      />
+                    {Logo.map((link, index) => (
+                      <a className='projects-page-anchor-container' key={index} href={link.url} target="_blank" rel="noopener noreferrer">
+                        <img
+                          className='img-fluid projects-page-small-icon'
+                          src={link.image}
+                          alt={`Link ${index + 1}`}
+                          style={{ paddingRight: '0.5rem' }}
+                        />
+                      </a>
                     ))}
                   </div>
                 </div>

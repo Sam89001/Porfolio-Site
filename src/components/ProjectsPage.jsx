@@ -31,7 +31,18 @@ import FigmaLogo from '../assets/figma-logo.svg'
 
 const DndCreatorImages = [DndCreatorImage, DndCreatorImage2, DndCreatorImage3]
 const DndCreatorTechStack = [FigmaLogo, HtmlLogo, CssLogo, BootstrapLogo, JavascriptLogo, ReactLogo, NodeLogo, MongoLogo]
-const DndCreatorLinks = [GithubLogo, HyperlinkLogo]
+const DndCreatorLinks = [
+  {
+    image: GithubLogo,
+    url: 'https://github.com/Sam89001/DNDcreator'
+  }
+];
+const PortfolioLinks = [
+  {
+    image: GithubLogo,
+    url: 'https://github.com/Sam89001/Porfolio-Site'
+  }
+];
 
 const PortfolioImages = [PortfolioImage, PortfolioImage2, PortfolioImage3]
 const PortfolioTechStack = [FigmaLogo, HtmlLogo, CssLogo, BootstrapLogo, JavascriptLogo, ViteLogo, ReactLogo ]
@@ -41,6 +52,7 @@ import Project from '../components/Project.jsx'
 function ProjectsPage() {
   return (
     <section>
+
       <div className='d-flex justify-content-center projects-page-component-container'>
         <div className='component-content-container projects-page-content flex-column'>
 
@@ -72,7 +84,7 @@ function ProjectsPage() {
       {/* Portfolio*/}
 
       <Project ProjectImage={PortfolioImages} TechStackImages={PortfolioTechStack} ProjectTitle={'Portfolio'} 
-      BackgroundColour={'var(--backgroundBlue)'} Logo={DndCreatorLinks}
+      BackgroundColour={'var(--backgroundBlue)'} Logo={PortfolioLinks}
       ProjectDescription=
       {`My portfolio website! Designed in Figma and run with Vite, my portfolio is a fully dynamic SPA designed for efficiency. 
       Images are optimised in WEBP or SVG format for fast loading; Vite runs quickly and efficiently; Bootstrap seamlessly adjusts 
