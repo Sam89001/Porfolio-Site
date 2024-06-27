@@ -1,3 +1,9 @@
+.navbar-item,
+.popout-link-text,
+.popout-close-button {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
 .navbar-container {
   position: fixed; 
   top: 0;
@@ -33,7 +39,7 @@
 /* Text */
 
 .navbar-item {
-  font-family: 'Josefin Sans', sans-serif;
+  
   font-size: 1.2rem;
   font-weight: 400;
   list-style: none;
@@ -49,7 +55,7 @@
   border-bottom: solid var(--textGrey) 0.2rem;
 }
 
-@media (max-width: 994px) {
+@media (max-width: 767px) {
   .navbar-hamburger-menu {
     display: flex;
   }
@@ -80,8 +86,14 @@
   transform: translateX(0);
 }
 
+.popout-list {
+  padding-left: 1rem;
+}
+
 .popout-list-item {
+  width: 100%;
   margin-bottom: 2rem;
+  border-bottom: 1px solid var(--textGrey); 
 }
 
 .popout-link {
@@ -90,17 +102,16 @@
   color: var(--textGrey); 
 }
 
-.popout-list-item:hover {
-  border-bottom: 2px solid var(--textGrey); 
-}
-
 .popout-link-text {
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 400;
 }
 
 .popout-close-button {
   background-color: transparent;
   border: none;
+}
+
+.popout-socials-image {
+ height: 2rem;
 }

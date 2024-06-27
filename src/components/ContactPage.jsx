@@ -61,6 +61,8 @@ function ContactPage() {
 
           <div className='col-lg-6 col-md-12 col-sm-12 row' style={{marginBottom: '2rem'}}>
 
+            {/* Email */}
+
              <div className='col-12' style={{padding: '0px 0px 2rem 0px'}}>
                 <div className='d-flex'>
                   <div className='d-flex flex-column' >
@@ -69,6 +71,8 @@ function ContactPage() {
                   </div>
                 </div>
              </div>
+
+            {/* Phone */}
 
              <div className='col-12' style={{padding: '0px 0px 2rem 0px'}}>
                 <div className='d-flex' >
@@ -79,39 +83,7 @@ function ContactPage() {
                 </div>
              </div>
 
-             <div className='col-12' style={{padding: '0px 0px 2rem 0px'}}>
-                <div className='d-flex' >
-
-                  <div className='d-flex flex-column' >
-                    <h2 className='contact-page-social-title' >Socials:</h2>
-
-                    <div className='d-flex flex-column' >
-
-                      <div className='d-flex flex-row' style={{marginBottom: '5px'}}>
-                        <a className='d-flex' href='https://github.com/Sam89001' target="_blank" rel="noopener noreferrer" style={{width: '5%'}}>
-                          <img className='img-fluid' src={Github} />
-                        </a>
-
-                        <a className='contact-page-social-media-link-container' href='https://github.com/Sam89001' target="_blank" rel="noopener noreferrer"> 
-                          <p className='contact-page-social-media-link'>github.com/Sam89001</p>
-                        </a>
-                      </div>
-
-                      <div className='d-flex flex-row'>
-                        <a className='d-flex' href='www.linkedin.com/in/samuel-cole89001' target="_blank" rel="noopener noreferrer" style={{width: '5%'}}>
-                          <img className='img-fluid' src={Linkedin} />
-                        </a>
-
-                        <a className='contact-page-social-media-link-container' href='https://github.com/Sam89001' target="_blank" rel="noopener noreferrer"> 
-                          <p className='contact-page-social-media-link'>linkedin.com/in/samuel-cole89001</p>
-                        </a>
-                      </div>
-                      
-                    </div>
-                    
-                  </div>
-                </div>
-             </div>
+             {/* Socials */}
 
              <div className='col-12' style={{padding: '0px 0px 2rem 0px'}}>
                 <div className='d-flex' >
@@ -132,7 +104,7 @@ function ContactPage() {
                       </div>
 
                       <div className='d-flex flex-row'>
-                        <a className='d-flex' href='www.linkedin.com/in/samuel-cole89001' target="_blank" rel="noopener noreferrer" style={{width: '5%'}}>
+                        <a className='d-flex' href='https://www.linkedin.com/in/samuel-cole89001/' target="_blank" rel="noopener noreferrer" style={{width: '5%'}}>
                           <img className='img-fluid' src={Linkedin} />
                         </a>
 

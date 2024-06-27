@@ -34,7 +34,7 @@ function Header() {
   return (
     <div className='d-flex justify-content-center align-items-center w-100 navbar-container'>
       <div className='d-flex justify-content-center align-items-center w-100 h-100 navbar-content'>
-        <div className='d-flex w-50 h-100 justify-content-start align-items-center'>
+        <div className='d-flex h-100 justify-content-start align-items-center' style={{width: '60%'}}>
           <img className='img-fluid navbar-logo' src={Logo} alt='Logo' style={{ height: '80%' }} />
           <img
             className='img-fluid navbar-hamburger-menu'
@@ -70,8 +70,8 @@ function Header() {
           </nav>
         </div>
 
-        <div className='d-flex w-50 justify-content-end align-items-center'>
-          <button className='navbar-button black-white-button-styling' onClick={handleDownload}>Download Resume</button>
+        <div className='d-flex justify-content-end align-items-center' style={{width: '39%'}}>
+          <button className='navbar-button black-white-button-styling' onClick={handleDownload} style={{fontSize: '0.9rem'}}>Download Resume</button>
         </div>
       </div>
 
