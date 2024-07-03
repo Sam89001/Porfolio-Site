@@ -55,15 +55,17 @@ import Project from '../components/Project.jsx'
 
 function ProjectsPage() {
   return (
-    <section>
+    <section style={{backgroundColor: 'var(--backgroundBlue)'}}>
 
       <div className='d-flex justify-content-center projects-page-component-container'>
         <div className='component-content-container projects-page-content flex-column'>
 
           <h1 className='main-header'>Portfolio</h1>
-          <p className='main-paragraph about-page-paragraph double-standard-bottom-padding'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation 
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          <p className='main-paragraph about-page-paragraph double-standard-bottom-padding'>
+            My coding projects showcase my passion and skills in web development and software creation. Using the MERN stack, 
+            I've built dynamic and responsive web applications that demonstrate my proficiency in frontend technologies like React 
+            and backend frameworks such as Node.js and Express. Explore how I've integrated MongoDB for robust database management, 
+            delivering functional and user-friendly solutions tailored to various project needs. </p>
         </div>
       </div>
 

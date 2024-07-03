@@ -1,6 +1,6 @@
 .footer-container {
   height: 6rem;
-  background-color: white;
+  background-color: var(--backgroundBlue);
 }
 
 .footer-logos-container {

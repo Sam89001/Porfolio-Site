@@ -2,7 +2,7 @@
 
 .about-page-content,
 .about-page-component-container {
-  background-color: var(--backgroundBlue);
+  background-color: var(--backgroundGreen);
 }
 
 .about-page-component-container {
@@ -53,17 +53,31 @@
 
 /* Images */
 
-.about-page-profile-image-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.about-page-hexagon-image-container {
+  position: relative;
 }
 
-.about-page-profile-image-container img {
-  max-width: 90%;
-  height: auto;
+.about-page-hexagon-larger-text,
+.about-page-hexagon-text {
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
+  font-weight: 800;
 }
+
+.about-page-hexagon-larger-text {
+  font-size: 6rem;
+}
+
+.about-page-hexagon-text {
+  line-height: 1;
+  margin: 0;
+  position: absolute;
+  z-index: 2;
+  height: 60%;
+  width: 70%;
+  font-size: 2rem;
+}
+
 /* Buttons */
 
 .about-page-button {

@@ -8,8 +8,8 @@ function Padding() {
     <div className='d-flex flex-column' style={{ position: 'relative', height: '12rem' }} id="section3">
       <img className='img-fluid hide-squiggles' src={BlueSquiggle} style={{ position: 'absolute', left: '0', height: '100%', zIndex: '2' }} />
       <img className='img-fluid hide-squiggles' src={GreenSquiggle} style={{ position: 'absolute', right: '0', height: '100%', zIndex: '2' }} />
-      <div style={{ height: '50%', backgroundColor: 'var(--backgroundBlue)' }} />
-      <div style={{ height: '50%' }}/>
+      <div style={{ height: '50%', backgroundColor: 'var(--backgroundGreen)' }} />
+      <div style={{ height: '50%', backgroundColor: 'var(--backgroundBlue)' }}/>
     </div>
   );
 }

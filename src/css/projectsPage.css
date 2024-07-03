@@ -13,6 +13,7 @@
 
 .projects-page-content {
   padding-top: 2%;
+  background-color: var(--backgroundBlue);
 }
 
 /* Headers & Text*/

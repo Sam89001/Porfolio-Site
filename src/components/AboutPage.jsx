@@ -2,7 +2,10 @@ import '../css/site.css'
 import '../css/index.css'
 import '../css/aboutPage.css'
 
-import ProfileImage from '../assets/Face Image With Shapes 2.png'
+import ProfileImage from '../assets/Face Image With Shapes 2.webp'
+import BlueHexagon from '../assets/Hexagon_Blue.webp'
+import YellowHexagon from '../assets/Hexagon_Yellow.webp'
+import GreenHexagon from '../assets/Hexagon_Green.webp'
 
 function AboutPage() {
   return (
@@ -22,20 +25,9 @@ function AboutPage() {
               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
               pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             
-              <div className='d-flex flex-row justify-content-between standard-bottom-padding'>
-                <div className='d-flex justify-content-center flex-column'>
-                  <h2 className='text-center about-page-stats-larger'>1+</h2>
-                  <h2 className='text-center about-page-stats-smaller'>Years of <br/> experience</h2>
-                </div>
-
-                <div className='d-flex justify-content-center flex-column'>
-                  <h2 className='text-center about-page-stats-larger'>2</h2>
-                  <h2 className='text-center about-page-stats-smaller'>Active <br/> Projects</h2>
-                </div>
-
-                <div className='d-flex justify-content-center flex-column'>
-                  <h2 className='text-center about-page-stats-larger'>1+</h2>
-                  <h2 className='text-center about-page-stats-smaller'>Years of <br/> experience</h2>
+              <div className='d-flex flex-row justify-content-between standard-bottom-padding w-100'>
+                <div className='d-flex' style={{position: 'relative', maxHeight: '200px'}}>
+                  <img src={BlueHexagon}/>
                 </div>
 
               </div>
@@ -45,12 +37,48 @@ function AboutPage() {
 
           </div>
 
-          {/* Right Side Image */}
+          {/* Right Side Stats */}
           <div className='col-lg-6 col-md-12 col-sm-12 about-page-image-column'>
-            <div className='about-page-profile-image-container'>
-              <img className='img-fluid' alt={'Profile'} src={ProfileImage}/>
+
+            <div className='w-100 h-100 d-flex justify-content-center flex-column align-items-center'>
+
+              <div className='d-flex justify-content-center align-items-center w-100 h-50'>
+
+                <div className='d-flex justify-content-center align-items-center w-50 h-100 about-page-hexagon-image-container'>
+                  <p className='text-center about-page-hexagon-text d-flex justify-content-center align-items-center flex-column'>
+                    <span className='about-page-hexagon-larger-text'>1+</span>
+                    Years of Experience
+                  </p>
+                  <img className='img-fluid image-container' src={YellowHexagon} alt="Yellow Hexagon" />
+                </div>
+
+              </div>
+
+              <div className='d-flex w-100 h-50'>
+
+                <div className='d-flex justify-content-center align-items-center w-50 h-100 about-page-hexagon-image-container' style={{ marginRight: '1.5rem' }}>   
+                  <p className='text-center about-page-hexagon-text d-flex justify-content-center align-items-center flex-column'>
+                    <span className='about-page-hexagon-larger-text'>2</span>
+                    Active Projects
+                  </p>
+
+                  <img className='img-fluid image-container' src={GreenHexagon} alt="Green Hexagon"/>
+                </div>
+
+                <div className='d-flex justify-content-center align-items-center w-50 h-100 about-page-hexagon-image-container'>
+                  <p className='text-center about-page-hexagon-text d-flex justify-content-center align-items-center flex-column'>
+                    <span className='about-page-hexagon-larger-text'>2+</span>
+                    Years of Experience
+                  </p>
+
+                  <img className='img-fluid image-container' src={BlueHexagon} alt="Blue Hexagon" />
+                </div>
+              </div>
+
             </div>
+            
           </div>
+
         </div>
 
       </div>

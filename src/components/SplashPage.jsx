@@ -3,7 +3,7 @@ import '../css/splashPage.css'
 import '../css/index.css'
 import '../css/padding.css'
 
-import ProfileImage from '../assets/Face Image With Shapes.webp'
+import ProfileImage from '../assets/Face Image With Shapes 2.webp'
 import GithubLogo from '../assets/github-logo.svg'
 import LinkedInLogo from '../assets/linkedin-logo.svg'
 import HtmlLogo from '../assets/html-5-logo.svg'
