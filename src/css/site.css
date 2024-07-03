@@ -21,6 +21,24 @@ html {
   z-index: 9999; 
 }
 
+.page-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.page-loader.fade-out {
+  opacity: 0;
+}
+
 /* Titles */
 
 .main-paragraph,

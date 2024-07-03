@@ -2,7 +2,6 @@ import '../css/site.css'
 import '../css/index.css'
 import '../css/aboutPage.css'
 
-import ProfileImage from '../assets/Face Image With Shapes 2.webp'
 import BlueHexagon from '../assets/Hexagon_Blue.webp'
 import YellowHexagon from '../assets/Hexagon_Yellow.webp'
 import GreenHexagon from '../assets/Hexagon_Green.webp'
