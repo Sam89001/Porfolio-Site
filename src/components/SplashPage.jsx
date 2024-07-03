@@ -88,7 +88,7 @@ function SplashPage() {
           {/* Sub Title + Buttons */}
           <h2 className='splash-page-paragraph-header double-standard-bottom-padding'>
              Hi! My name is 
-             <span style={{fontWeight: '600'}}> Samuel Cole </span>
+             <span style={{fontWeight: '600'}}> Sam Cole </span>
              , I'm a front-end developer based in the UK. Nice to meet you!
           </h2>
 

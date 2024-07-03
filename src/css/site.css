@@ -44,14 +44,22 @@ html {
 /* Titles */
 
 .main-paragraph,
-.main-header {
+.main-header,
+.sub-header {
   font-family: 'Josefin Sans', sans-serif;
 }
 
-.main-header {
+.main-header,
+.sub-header {
   margin: 0;
-  font-size: 6rem;
   letter-spacing: -2px;
+}
+
+.main-header {
+  font-size: 6rem;
+}
+.sub-header {
+  font-size: 3rem;
 }
 
 .standard-bottom-padding {
@@ -67,7 +75,7 @@ html {
 }
 
 .main-paragraph {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 200; 
 }
 

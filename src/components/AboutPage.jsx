@@ -17,15 +17,15 @@ function AboutPage() {
 
             <div className='d-flex flex-column about-page-text-section-width'>
 
-              <h1 className='main-header standard-bottom-padding'>Hey! I'm Sam</h1>
+              <h1 className='main-header'>Hey! I'm Sam Cole</h1>
+              <h2 className='sub-header standard-bottom-padding' style={{color: 'var(--blue)', fontWeight: '600'}}>Based in the UK</h2>
 
-              <p className='main-paragraph about-page-paragraph standard-bottom-padding'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-              pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p className='main-paragraph about-page-paragraph standard-bottom-padding'>
+                I am a front-end developer specializing in the MERN stack (MongoDB, ExpressJS, ReactJS, and NodeJS), and Bootstrap. I combine creativity 
+                with functionality to craft user-friendly web interfaces that captivate. Let's collaborate and bring your digital vision to life!</p>
 
               {/* Hidden Hexagons Section*/}
-              <div className='d-flex flex-row justify-content-between double-standard-bottom-padding w-100 about-page-hexagon-section-small'>
+              <div className='d-flex flex-row justify-content-between standard-bottom-padding w-100 about-page-hexagon-section-small'>
 
                 <div className='d-flex justify-content-center align-items-center' style={{position: 'relative'}}>
                   <p className='text-center about-page-hexagon-text-small-screens d-flex justify-content-center align-items-center flex-column'>
@@ -66,7 +66,7 @@ function AboutPage() {
                 <div className='d-flex justify-content-center align-items-center w-50 h-100 about-page-hexagon-image-container'>
                   <p className='text-center about-page-hexagon-text d-flex justify-content-center align-items-center flex-column'>
                     <span className='about-page-hexagon-larger-text'>1+</span>
-                    Years of Experience
+                    Year's of Experience
                   </p>
                   <img className='img-fluid h-100' src={YellowHexagon} alt="Yellow Hexagon" />
                 </div>
@@ -86,7 +86,7 @@ function AboutPage() {
                 <div className='d-flex justify-content-center align-items-center w-50 h-100 about-page-hexagon-image-container'>
                   <p className='text-center about-page-hexagon-text d-flex justify-content-center align-items-center flex-column'>
                     <span className='about-page-hexagon-larger-text'>2+</span>
-                    Years of Experience
+                    Year's of Experience
                   </p>
 
                   <img className='img-fluid h-100' src={BlueHexagon} alt="Blue Hexagon" />
