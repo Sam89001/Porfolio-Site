@@ -21,6 +21,8 @@ html {
   z-index: 9999; 
 }
 
+/* Page Loader */
+
 .page-loader {
   position: fixed;
   top: 0;
