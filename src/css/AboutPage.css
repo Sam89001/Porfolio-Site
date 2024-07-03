@@ -31,6 +31,14 @@
   width: 80%;
 }
 
+.about-page-hexagon-section-small,
+.about-page-hexagon-text-small-screens,
+.about-page-hexagon-larger-text-small-screens,
+.about-page-hexagon-image-small {
+  visibility: hidden;
+  display: none;
+}
+
 /* Headers and Text */
 
 .about-page-stats-larger,
@@ -53,29 +61,46 @@
 
 /* Images */
 
+
 .about-page-hexagon-image-container {
   position: relative;
 }
 
+.about-page-hexagon-image-small {
+  width: 75%;
+}
+
 .about-page-hexagon-larger-text,
-.about-page-hexagon-text {
+.about-page-hexagon-text,
+.about-page-hexagon-larger-text-small-screen,
+.about-page-hexagon-text-small-screens {
   font-family: 'Josefin Sans', sans-serif;
   color: white;
   font-weight: 800;
 }
 
-.about-page-hexagon-larger-text {
-  font-size: 6rem;
-}
-
-.about-page-hexagon-text {
+.about-page-hexagon-text,
+.about-page-hexagon-text-small-screens {
   line-height: 1;
   margin: 0;
   position: absolute;
   z-index: 2;
   height: 60%;
-  width: 70%;
+  width: 60%;
+}
+
+.about-page-hexagon-larger-text {
+  font-size: 6rem;
+}
+.about-page-hexagon-text {
   font-size: 2rem;
+}
+
+.about-page-hexagon-larger-text-small-screens {
+  font-size: 3rem;
+}
+.about-page-hexagon-text-small-screens {
+  font-size: 1rem;
 }
 
 /* Buttons */
@@ -87,7 +112,8 @@
 
 /* Media Queries */
 
-@media (max-width: 990px) {
+
+@media (max-width: 992px) {
   .about-page-text-column {
     order: 2;
   }
@@ -97,18 +123,23 @@
     padding: 3em 0em 3em 0em;
   }
 
-  .about-page-profile-image-container {
-    height: auto; 
-  }
-
-  .about-page-profile-image-container img {
-    width: 80%; 
-  }
-
   .about-page-text-section-width {
     width: 100%;
   }
+
+  .about-page-hexagon-section {
+    display: none;
+  }
+
+  .about-page-hexagon-section-small,
+  .about-page-hexagon-text-small-screens,
+  .about-page-hexagon-larger-text-small-screens,
+  .about-page-hexagon-image-small {
+    display: flex;
+    visibility: visible;
+  }
 }
+
 
 @media (max-width: 767px) {
   .about-page-stats-larger {
@@ -122,5 +153,35 @@
     font-weight: 400; 
     letter-spacing: -1.5px;
     line-height: -1;
+  }
+}
+
+@media (max-width: 650px) {
+  .about-page-hexagon-image-small {
+    width: 90%;
+  }
+  
+}
+
+@media (max-width: 500px) {
+
+  .about-page-hexagon-image-small {
+    width: 95%;
+  }
+  .about-page-hexagon-larger-text-small-screens {
+    font-size: 2rem;
+  }
+  .about-page-hexagon-text-small-screens {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 360px) {
+ 
+  .about-page-hexagon-larger-text-small-screens {
+    font-size: 1.5rem;
+  }
+  .about-page-hexagon-text-small-screens {
+    font-size: 0.5rem;
   }
 }
