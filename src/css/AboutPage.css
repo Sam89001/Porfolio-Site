@@ -29,6 +29,12 @@
 
 .about-page-text-section-width {
   width: 80%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.about-page-text-section-width.visible {
+  opacity: 1;
 }
 
 .about-page-hexagon-section-small,
@@ -61,13 +67,15 @@
 
 /* Images */
 
-
 .about-page-hexagon-image-container {
   position: relative;
 }
 
 .about-page-hexagon-image-small {
+  opacity: 0;
+  visibility: hidden;
   width: 75%;
+  transition: opacity 3s ease-in;
 }
 
 .about-page-hexagon-larger-text,
@@ -112,7 +120,6 @@
 
 /* Media Queries */
 
-
 @media (max-width: 992px) {
   .about-page-text-column {
     order: 2;
@@ -140,7 +147,6 @@
   }
 }
 
-
 @media (max-width: 767px) {
   .about-page-stats-larger {
     font-size: 2.5rem;
@@ -160,11 +166,9 @@
   .about-page-hexagon-image-small {
     width: 90%;
   }
-  
 }
 
 @media (max-width: 500px) {
-
   .about-page-hexagon-image-small {
     width: 95%;
   }
@@ -177,7 +181,6 @@
 }
 
 @media (max-width: 360px) {
- 
   .about-page-hexagon-larger-text-small-screens {
     font-size: 1.5rem;
   }
