@@ -17,7 +17,6 @@
 
 .contact-page-input-container {
   margin-bottom: 0.5rem;
-  width: 100%;
 }
 
 .contact-page-icon-container{
@@ -26,36 +25,6 @@
   width: 10%;
 }
 
-
-
-
-/* Text */
-.contact-page-social-title,
-.contact-page-social-content,
-.contact-page-social-media-link,
-.contact-page-form-button {
-  font-family: 'Josefin Sans', sans-serif;
-  margin: 0;
-}
-
-.contact-page-social-title {
-  font-weight: 400;
-  font-size: 2rem;
-  color: var(--red);
-}
-
-.contact-page-social-content {
-  font-size: 1.2rem;
-}
-
-.contact-page-social-media-link-container {
-  text-decoration: none; /* Removes underline */
-  color: inherit; /* Inherits the color from its parent */
-}
-
-.contact-page-social-media-link {
-  font-size: 1.2rem;
-}
 
 /* Images */
 
@@ -75,8 +44,6 @@
 .contact-page-input-message-field  {
   background-color: transparent;
   padding: 10px;
-  border: solid 1px var(--textGrey);
-  width: 100%;
   font-family: 'Josefin Sans', sans-serif;
   color: var(--textGrey);
 }
@@ -98,6 +65,7 @@
 
 .contact-page-input-message-field {
   min-height: 15rem;
+  margin-bottom: 20px;
 }
 
 .contact-page-form-button-container {

@@ -18,15 +18,21 @@ function ContactPage() {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
+
+  const [emailCounter, setEmailCounter] = useState(0)
   
   
   const sendEmail = (e) => {
     e.preventDefault();
-
+  
     const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
     const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
     const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
+    var nameField = document.getElementById('namefield')
+    var emailField = document.getElementById('emailfield')
+    var messageField = document.getElementById('messagefield')
+  
     const template = {
       from_name: name,
       from_email: email,
@@ -34,18 +40,34 @@ function ContactPage() {
       message: message
     }
 
+    //Basic Validation
+  
+    if (!name.length || !email.length || !message.length) {
+      toast.error('Please make sure name, email and message boxes are filled.');
+      return;
+    } else if (emailCounter >= 3) {
+      toast.error('You have reached the limit of sending emails.');
+      return;
+    }
+
+    //Sending Email
+  
     emailjs.send(serviceId, templateId, template, publicKey)
       .then((response) => {
         console.log('success', response);
         setName('');
         setEmail('');
         setMessage('');
-        toast.success('Email sent!')
+        nameField.value=('')
+        emailField.value=('')
+        messageField.value=('')
+        toast.success('Email sent!');
+        setEmailCounter(prevCounter => prevCounter + 1); 
       })
       .catch((error) => {
-        toast.error('Error send email')
-        console.error('error', response)
-      })
+        toast.error('Error sending email');
+        console.error('error', error);
+      });
   };
 
   return (
@@ -54,104 +76,51 @@ function ContactPage() {
         <div className='row d-flex h-100 justify-content-center'>
 
           <div className='col-12'>
-            <h1 className='main-header double-standard-bottom-padding'>Lets Connect!</h1>
-          </div>
-
-          {/* Text */}
-
-          <div className='col-lg-6 col-md-12 col-sm-12 row' style={{marginBottom: '2rem'}}>
-
-            {/* Email */}
-
-             <div className='col-12' style={{padding: '0px 0px 2rem 0px'}}>
-                <div className='d-flex'>
-                  <div className='d-flex flex-column' >
-                    <h2 className='contact-page-social-title'>Email Me:</h2>
-                    <p className='contact-page-social-content'>Samscreativespace'@'gmail.com</p>
-                  </div>
-                </div>
-             </div>
-
-            {/* Phone */}
-
-             <div className='col-12' style={{padding: '0px 0px 2rem 0px'}}>
-                <div className='d-flex' >
-                  <div className='d-flex flex-column' >
-                    <h2 className='contact-page-social-title' >Call Me:</h2>
-                    <p className='contact-page-social-content'>+44 7527 063 138</p>
-                  </div>
-                </div>
-             </div>
-
-             {/* Socials */}
-
-             <div className='col-12' style={{padding: '0px 0px 2rem 0px'}}>
-                <div className='d-flex' >
-
-                  <div className='d-flex flex-column' >
-                    <h2 className='contact-page-social-title' >Socials:</h2>
-
-                    <div className='d-flex flex-column' >
-
-                      <div className='d-flex flex-row' style={{marginBottom: '5px'}}>
-                        <a className='d-flex contact-page-social-media-image' href='https://github.com/Sam89001' target="_blank" rel="noopener noreferrer" style={{width: '5%'}}>
-                          <img className='img-fluid contact-page-social-media-image' src={Github} />
-                        </a>
-
-                        <a className='contact-page-social-media-link-container' href='https://github.com/Sam89001' target="_blank" rel="noopener noreferrer"> 
-                          <p className='contact-page-social-media-link'>github.com/Sam89001</p>
-                        </a>
-                      </div>
-
-                      <div className='d-flex flex-row'>
-                        <a className='d-flex contact-page-social-media-image' href='https://www.linkedin.com/in/samuel-cole89001/' target="_blank" rel="noopener noreferrer" style={{width: '5%'}}>
-                          <img className='img-fluid contact-page-social-media-image' src={Linkedin} />
-                        </a>
-
-                        <a className='contact-page-social-media-link-container ' href='https://github.com/Sam89001' target="_blank" rel="noopener noreferrer"> 
-                          <p className='contact-page-social-media-link'>linkedin.com/in/samuel-cole89001</p>
-                        </a>
-                      </div>
-                      
-                    </div>
-                    
-                  </div>
-                </div>
-             </div>
-        
+            <h1 className='main-header'>Lets Connect!</h1>
+            <h2 className='sub-header double-standard-bottom-padding' style={{color: 'var(--green)'}}>Message me</h2>
           </div>
 
           {/* Form */}
 
-          <div className='col-lg-6 col-md-12 col-sm-12 flex-column d-flex' style={{marginBottom: '2rem'}}>
+          <div className='col-12 d-flex w-100' style={{marginBottom: '2rem'}}>
             
 
-            <form onSubmit={sendEmail}>
+            <form className='w-100' onSubmit={sendEmail}>
 
-              <div className='contact-page-input-container'>
-                <label className='contact-page-label'>Name <span className='contact-page-label-star'>*</span>
-                </label>
-                <input className='d-flex contact-page-input-field' 
-                placeholder='John Smith' 
-                type="text" 
-                onChange={(e) => { setName(e.target.value)}}
-                />
-              </div>
-              
-              <div className='contact-page-input-container'>
-                <label className='contact-page-label'>Email <span className='contact-page-label-star'>*</span>
-                </label>
-                <input className='d-flex contact-page-input-field' 
-                placeholder='JohnSmith@SmithJohn.com' 
-                type="email"
-                onChange={(e) => { setEmail(e.target.value)}} />
+              <div className='d-flex flex-row w-100'>
+
+                <div className='contact-page-input-container w-50'>
+                  <label className='contact-page-label'>Name <span className='contact-page-label-star'>*</span>
+                  </label>
+                  <input className='d-flex contact-page-input-field' 
+                  id='namefield'
+                  placeholder='John Smith' 
+                  type="text" 
+                  style={{width: '98%', border: 'solid 2px var(--red)'}}
+                  onChange={(e) => { setName(e.target.value)}}
+                  />
+                </div>
+                
+                <div className='d-flex flex-column justify-content-end w-50 contact-page-input-container'>
+                  <label className='contact-page-label'>Email <span className='contact-page-label-star'>*</span>
+                  </label>
+                  <input className='d-flex contact-page-input-field' 
+                  id='emailfield'
+                  placeholder='JohnSmith@SmithJohn.com' 
+                  type="email"
+                  style={{width: '98%', border: 'solid 2px var(--yellow)'}}
+                  onChange={(e) => { setEmail(e.target.value)}} />
+                </div>
+
               </div>
 
-              <div className='contact-page-input-container'>
+              <div className='contact-page-input-container w-100'>
                 <label className='contact-page-label'>Message <span className='contact-page-label-star'>*</span>
                 </label>
-                <textarea className='d-flex contact-page-input-message-field' 
-                placeholder='Your Message' 
+                <textarea className='d-flex contact-page-input-message-field w-100' 
+                id='messagefield'
+                placeholder='Your Message'
+                style={{border: 'solid 2px var(--blue)'}} 
                 onChange={(e) => { setMessage(e.target.value)}} />
               </div>
 

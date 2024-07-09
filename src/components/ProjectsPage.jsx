@@ -36,10 +36,13 @@ const DndCreatorLinks = [
     image: GithubLogo,
     url: 'https://github.com/Sam89001/DNDcreator'
   },
+
+  /*
   {
     image: HyperlinkLogo,
     url: 'https://dndcreator.netlify.app'
   }
+  */
 ];
 const PortfolioLinks = [
   {

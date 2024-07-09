@@ -1,16 +1,14 @@
 .footer-container {
+  padding: 10px 3px 3px 3px;
   height: 6rem;
   background-color: var(--backgroundBlue);
 }
 
-.footer-logos-container {
-  height: '40%';
-  padding-right: 1rem;
-  max-width: 8%;
+.footer-text-column {
+  width: 30%;
 }
 
 .footer-logo-image {
-  height: '100%';
   transition: opacity 0.1s ease-in;
 }
 .footer-logo-image:hover {
@@ -24,32 +22,39 @@
    5px;
 }
 
-.footer-text {
+.footer-title,
+.footer-text,
+.footer-text-hover-change {
   font-family: 'Josefin Sans', sans-serif;
+  margin: 0;
   font-size: 1rem;
-  margin: 0 10px 0 0;
 }
 
-@media (max-width: 900px) {
-  .footer-logos-container {
-    max-width: 12%;
+.footer-title {
+  padding-bottom: 10px;
+  font-weight: 400;
+}
+.footer-text {
+  font-weight: 300;
+  word-wrap: break-word;
+  white-space: normal;
+  padding-bottom: 5px;
+}
+
+.footer-text-hover-change {
+  font-weight: 300;
+  text-decoration: underline;
+  color: inherit;
+  display: pointer;
+}
+
+.footer-text-hover-change:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 990px) {
+  .footer-container {
+    height: 9rem;
   }
 }
 
-@media (max-width: 750px) {
-  .footer-logos-container {
-    max-width: 15%;
-  }
-}
-
-@media (max-width: 500px) {
-  .footer-logos-container {
-    max-width: 20%;
-  }
-}
-
-@media (max-width: 350px) {
-  .footer-logos-container {
-    max-width: 30%;
-  }
-}
