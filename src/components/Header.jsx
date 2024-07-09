@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../css/navbar.css';
-import Logo from '../assets/SC.png';
+import Logo from '../assets/SC-green-background-svg.svg';
 import HamburgerMenu from '../assets/Hamburger Menu.webp';
 import PopoutNavbar from './PopoutNavbar';
 
