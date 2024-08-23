@@ -47,7 +47,7 @@ function Header() {
           <nav className='w-100 navbar-links'>
             <ul className='nav'>
               <li className='navbar-item'>
-                <a className='navbar-link' href='#section1'>
+                <a className='navbar-link' href='#'>
                   Home
                 </a>
               </li>

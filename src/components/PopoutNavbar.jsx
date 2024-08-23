@@ -26,7 +26,7 @@ function PopoutNavbar({ isVisible, onClose }) {
         <ul className='popout-list' style={{listStyle: 'none', width: '100%'}}>
 
           <li className='popout-list-item'>
-            <a className='popout-link' href='#section1'>
+            <a className='popout-link' href='#'>
               <h2 className='popout-link-text'>Home</h2>
             </a>
           </li>

@@ -17,11 +17,29 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 3500); 
+    // Function to handle the loading based on screen size
+    const handleLoading = () => {
+      if (window.innerWidth > 1070) { // Adjust the breakpoint value as needed
+        const timer = setTimeout(() => {
+          setLoading(false);
+        }, 3500);
+        
+        return () => clearTimeout(timer);
+      } else {
+        setLoading(false);
+      }
+    };
 
-    return () => clearTimeout(timer);
+    // Initial loading check
+    handleLoading();
+    
+    // Optional: Handle resizing if you want to dynamically check on resize
+    window.addEventListener('resize', handleLoading);
+    
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleLoading);
+    };
   }, []);
 
   const handleLoadingComplete = () => {
@@ -50,3 +68,4 @@ function App() {
 }
 
 export default App;
+
