@@ -145,7 +145,24 @@
     display: flex;
     visibility: visible;
   }
+
+
+  /* Hexagon CSS */
+  .hexagon-title-red {
+    color: var(--red);
+  }
+  .hexagon-title-green {
+    color: var(--green);
+  }
+  .hexagon-title-yellow {
+    color: var(--yellow);
+  }
+  .about-page-hexagon-larger-text-small-screens {
+    font-size: 4.5rem
+  }
 }
+
+
 
 @media (max-width: 767px) {
   .about-page-stats-larger {
@@ -159,6 +176,10 @@
     font-weight: 400; 
     letter-spacing: -1.5px;
     line-height: -1;
+  }
+
+  .about-page-hexagon-larger-text-small-screens {
+    font-size: 3rem
   }
 }
 

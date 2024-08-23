@@ -84,18 +84,19 @@ html {
 
 .black-white-button-styling {
   font-family: 'Josefin Sans', sans-serif;
-  border: solid 2px var(--textGrey);
+  border: solid 2px var(--green);
+  border-radius: 10px;
   font-weight: 600;
   background-color: transparent;
   transition: background-color 0.3s, color 0.3s, border-color 0.3s; 
   text-decoration: none;
   cursor: pointer;
-  color: var(--textGrey);
+  color: var(--green);
 }
 
 .black-white-button-styling:hover {
   border-color: transparent;
-  background-color: var(--red);
+  background-color: var(--yellow);
   color: white;
   font-weight: 800;
 }

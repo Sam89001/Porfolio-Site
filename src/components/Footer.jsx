@@ -7,7 +7,7 @@ function Footer() {
   return (
     <div className='d-flex justify-content-center align-items-center w-100 footer-container'>
 
-      <div className='d-flex align-items-center h-100  w-100 footer-content justify-content-between'>
+      <div className='d-flex align-items-center h-100 w-100 footer-content justify-content-between'>
         
         <div className='d-flex flex-column h-100 align-items-center footer-text-column' >
           <h3 className='footer-title'>Rights</h3>

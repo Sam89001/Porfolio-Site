@@ -39,23 +39,22 @@
 /* Text */
 
 .navbar-item {
-  
-  font-size: 1.2rem;
-  font-weight: 400;
+  font-size: 1.5rem;
+  font-weight: 600;
   list-style: none;
   padding-right: 1.5rem;
 }
 
 .navbar-link {
-  color: var(--textGrey); 
+  color: var(--green); 
   text-decoration: none; 
 }
 
 .navbar-link:hover {
-  border-bottom: solid var(--textGrey) 0.2rem;
+  border-bottom: solid var(--green) 0.2rem;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 950px) {
   .navbar-hamburger-menu {
     display: flex;
   }

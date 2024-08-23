@@ -35,7 +35,7 @@ function Header() {
     <div className='d-flex justify-content-center align-items-center w-100 navbar-container'>
       <div className='d-flex justify-content-center align-items-center w-100 h-100 navbar-content'>
         <div className='d-flex h-100 justify-content-start align-items-center' style={{width: '60%'}}>
-          <img className='img-fluid navbar-logo' src={Logo} alt='Logo' style={{ height: '80%' }} />
+          <img className='img-fluid navbar-logo' src={Logo} alt='Logo' style={{ height: '200%', paddingTop: '1rem' }} />
           <img
             className='img-fluid navbar-hamburger-menu'
             src={HamburgerMenu}

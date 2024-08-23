@@ -92,7 +92,7 @@ function SplashPage() {
              , I'm a front-end developer based in the UK. Nice to meet you!
           </h2>
 
-          <div className='d-flex flex-row'>
+          <div className='d-flex flex-row standard-bottom-padding'>
             <a className='splash-page-work-together-button black-white-button-styling splash-page-button' 
             style={{marginRight: '20px'}} href="#section4">Let's Work Together</a>
 

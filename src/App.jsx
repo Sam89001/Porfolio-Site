@@ -4,7 +4,6 @@ import './css/index.css';
 import PageLoader from './components/PageLoader.jsx';
 import PopoutNavbar from './components/PopoutNavbar.jsx';
 import Popup from './components/Popup.jsx';
-import TopPadding from './components/TopPadding.jsx';
 import Header from './components/Header.jsx';
 import SplashPage from './components/SplashPage.jsx';
 import AboutPage from './components/AboutPage.jsx';
@@ -36,7 +35,6 @@ function App() {
         <>
           <PopoutNavbar />
           <Popup />
-          <TopPadding />
           <Header />
           <SplashPage />
           <SplashPagePadding />

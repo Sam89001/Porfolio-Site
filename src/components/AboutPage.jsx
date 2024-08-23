@@ -57,8 +57,8 @@ function AboutPage() {
               {/* Hidden Hexagons Section */}
               <div className='d-flex flex-row justify-content-between standard-bottom-padding w-100 about-page-hexagon-section-small'>
                 <div className='d-flex justify-content-center align-items-center' style={{ position: 'relative' }}>
-                  <p className='text-center about-page-hexagon-text-small-screens d-flex justify-content-center align-items-center flex-column'>
-                    <span className='about-page-hexagon-larger-text-small-screens'>1+</span>
+                  <p className='text-center about-page-hexagon-text-small-screens hexagon-title-red d-flex justify-content-center align-items-center flex-column'>
+                    <span className='about-page-hexagon-larger-text-small-screens hexagon-title-red'>1+</span>
                     Years of Experience
                   </p>
                   <img 
@@ -69,8 +69,8 @@ function AboutPage() {
                 </div>
 
                 <div className='d-flex justify-content-center align-items-center' style={{ position: 'relative' }}>
-                  <p className='text-center about-page-hexagon-text-small-screens d-flex justify-content-center align-items-center flex-column'>
-                    <span className='about-page-hexagon-larger-text-small-screens'>2</span>
+                  <p className='text-center about-page-hexagon-text-small-screens hexagon-title-green d-flex justify-content-center align-items-center flex-column'>
+                    <span className='about-page-hexagon-larger-text-small-screens hexagon-title-green'>2</span>
                     Active Projects
                   </p>
                   <img 
@@ -81,8 +81,8 @@ function AboutPage() {
                 </div>
 
                 <div className='d-flex justify-content-center align-items-center' style={{ position: 'relative' }}>
-                  <p className='text-center about-page-hexagon-text-small-screens d-flex justify-content-center align-items-center flex-column'>
-                    <span className='about-page-hexagon-larger-text-small-screens'>2+</span>
+                  <p className='text-center about-page-hexagon-text-small-screens hexagon-title-yellow d-flex justify-content-center align-items-center flex-column'>
+                    <span className='about-page-hexagon-larger-text-small-screens hexagon-title-yellow'>2+</span>
                     Years of Experience
                   </p>
                   <img 
