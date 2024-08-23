@@ -31,7 +31,7 @@ function Project({ ProjectTitle, ProjectImage, Logo, TechStackImages, Background
   };
 
   return (
-    <div className='d-flex justify-content-center projects-page-component-container' style={{backgroundColor: BackgroundColour, paddingBottom: '2em'}}>
+    <div className='d-flex justify-content-center projects-page-component-container' style={{backgroundColor: BackgroundColour, paddingBottom: '6em'}}>
       <div className='component-content-container projects-page-content ' style={{backgroundColor: BackgroundColour}}>
             <div className='row h-100'>
 

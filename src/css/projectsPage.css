@@ -47,8 +47,6 @@
 
 .projects-page-sub-header-container {
   width: 100%;
-  border-bottom: 1px solid var(--textGrey);
-  margin-bottom: 10px;
 }
 
 .projects-page-sub-header {
@@ -56,6 +54,12 @@
 }
 
 
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
 
 /* Images  */
 
@@ -104,7 +108,6 @@
   height: 2.5em;
   width: 100%;
   overflow-y: auto;
-  
   padding-bottom: 10px;
 }
 
